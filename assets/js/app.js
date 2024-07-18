@@ -23,7 +23,7 @@ async function fetchDataAndRender(url) {
 fetchDataAndRender('assets/json/quiz-data.json');
 
 /**
- * @param {Object} The returned JSON data from the fetchDataAndRender function
+ * @param {Object} JSON - The returned JSON data from the fetchDataAndRender function
  * This function initializes the quiz by setting the first question and its answers
  */
 function initQuiz(jsonData) {
