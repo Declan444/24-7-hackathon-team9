@@ -42,7 +42,10 @@ function checkAnswer(selected) {
     } else {
       console.log('Game Over');
     }
-  }, 2000);
+  }, 1500);
+  // Add second delay after new question is loaded to avoid clicking 
+  // the same answer twice and scoring twice. 
+  setTimeout(() => {}, 500);
 }
 
 function updateQuestion(quizContentQuestion, imgSrc) {
@@ -65,7 +68,7 @@ function updateAnswers(quizContentAnswers) {
     li.setAttribute('data-choiceID', choice.id);
     li.addEventListener('click', (e) => {
       checkAnswer(e.target.getAttribute('data-choiceID'));
-    });
+    }, {once: true}); // {once: true} makes the event happen only once.
     choices.appendChild(li);
   });
 }

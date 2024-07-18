@@ -55,11 +55,10 @@
       </div>
     </nav>
     <main>
-      <section class="p-5">
-        <div class="container">
+        <div class="container quiz-container">
           <div class="row">
-            <div class="col">
-              <h1>Quiz</h1>
+            <div class="col col-md-6 d-flex flex-column">
+              <h1 class="text-center mt-3 mb-3">Quiz</h1>
               <img
                 src="assets/img/quiz.jpg"
                 class="img-fluid"
@@ -67,17 +66,16 @@
                 style="display: none"
                 id="questionImage"
               />
-              <p id="question"></p>
-              <ul id="choices"></ul>
+              <p id="question" class="p-3 mt-4 mb-4"></p>
+              <ul id="choices" class="list-unstyled"></ul>
             </div>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col col-md-6">
               <p>Your Score is: <span id="score">0</span></p>
             </div>
           </div>
         </div>
-      </section>
     </main>
   </body>
 </html>
