@@ -92,4 +92,4 @@ As a returning visitor I want...
 
 - Many thanks to the 'Hackteam' who give their time and energy voluntarily to support Code Institute's July 2024 Hackathon.
 
-  ![Hackathon Team](url to image to come soon!)
+  ![Hackathon Team](./README.me-image-hackteam.png)
