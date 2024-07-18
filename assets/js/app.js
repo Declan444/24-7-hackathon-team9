@@ -1,69 +1,52 @@
-/**
- * Parse the HTML Dom elements to be manipulated and assign them to variables
- */
-const question = document.getElementById('question');
-const answerOptions = document.getElementById('answers');
+import jsonData from './../json/quiz-data.js';
 
-/**
- *@param {string} Url - The location of the JSON Data to fetch
- *This function fetches the JSON data from the URL provided and initializes the quiz
- */
-async function fetchDataAndRender(url) {
-  try {
-    const response = await fetch(url);
-    const jsonData = await response.json();
-    initQuiz(jsonData);
-  } catch (err) {
-    // If an error occurs we log it to the console
-    console.error('Failed to fetch and render data', err);
-  }
+var quizContent = jsonData;
+var currentQuestion = 0;
+var correctAnswers = 0;
+
+function showQuestion(quizContent, currentQuestion) {
+  updateQuestion(quizContent[currentQuestion].prompt);
+  updateAnswers(quizContent[currentQuestion].choices);
 }
 
-// Call the fetchDataAndRender function with the URL of the JSON data
-fetchDataAndRender('assets/json/quiz-data.json');
-
-/**
- * @param {Object} JSON - The returned JSON data from the fetchDataAndRender function
- * This function initializes the quiz by setting the first question and its answers
- */
-function initQuiz(jsonData) {
-  let currQuestion = 0;
-  let currAnswer = jsonData[currQuestion].answer;
-
-  // Add an event listener to the answer options to check if the selected answer is correct
-  answerOptions.addEventListener('click', (e) => {
-    if (e.target && e.target.matches('li')) {
-      const dataID = e.target.getAttribute('data-id');
-      checkAnswer(dataID, currAnswer);
-    }
-  });
-
-  /**
-   * @param {string} dataID - The id of the selected answer
-   * @param {string} currAnswer - The correct answer to the question
-   * This function checks if the selected answer is correct
-   */
-  function checkAnswer(dataID, currAnswer) {
-    console.log(dataID, currAnswer);
-    if (dataID === currAnswer) {
-      console.log(
-        `"You selected ${dataID}, the correct answer is ${currAnswer}"`
-      );
+function checkAnswer(selected) {
+  if (selected === jsonData[currentQuestion].answer) {
+    console.log('correct');
+    const score = document.getElementById('score');
+    correctAnswers++;
+    score.innerHTML = correctAnswers;
+  } else {
+    console.log('incorrect');
+  }
+  currentQuestion++;
+  setTimeout(() => {
+    if (currentQuestion < quizContent.length) {
+      showQuestion(quizContent, currentQuestion);
     } else {
-      console.log(
-        `"You selected ${dataID}, the correct answer is ${currAnswer}"`
-      );
+      const quizContainer = document.querySelector('.quiz-container');
+      quizContainer.innerHTML = `<p>You got ${correctAnswers} out of ${questions.length} questions.</p>`;
     }
-  }
+  }, 2000);
+}
 
-  // Update the DOM with the current question
-  question.innerHTML = jsonData[currQuestion].prompt;
+function updateQuestion(quizContentQuestion) {
+  const questionText = document.getElementById('question');
+  questionText.textContent = quizContentQuestion;
+}
 
-  // Update the answer options with the current question's answers
-  jsonData[0].choices.forEach((answer) => {
-    let answerOption = document.createElement('li');
-    answerOption.setAttribute('data-id', answer.id);
-    answerOption.innerHTML = answer.content;
-    answerOptions.appendChild(answerOption);
+function updateAnswers(quizContentAnswers) {
+  const choices = document.getElementById('choices');
+  choices.innerHTML = '';
+  quizContentAnswers.forEach((choice, index) => {
+    const li = document.createElement('li');
+    li.textContent = choice.content;
+    li.setAttribute('data-id', index);
+    li.setAttribute('data-choiceID', choice.id);
+    li.addEventListener('click', (e) => {
+      checkAnswer(e.target.getAttribute('data-choiceID'));
+    });
+    choices.appendChild(li);
   });
 }
+
+showQuestion(quizContent, currentQuestion);
