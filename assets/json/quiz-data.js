@@ -33,38 +33,17 @@ const jsonData = [
     answer: 'd',
   },
   {
-    id: '4',
-    prompt: 'When was the first protest for gay and lesbian rights?',
+    id: "4"
+    img: "assets/img/traditional-pride-flag.png"
+    prompt: "What year was the first Pride Flag designed?"
     choices: [
-      { id: 'a', content: '1966' },
-      { id: 'b', content: '1962' },
-      { id: 'c', content: '1984' },
-      { id: 'd', content: '1965' },
-    ],
-    answer: 'd',
-  },
-  {
-    id: '5',
-    prompt: 'When was the first protest for gay and lesbian rights?',
-    choices: [
-      { id: 'a', content: '1966' },
-      { id: 'b', content: '1962' },
-      { id: 'c', content: '1984' },
-      { id: 'd', content: '1965' },
-    ],
-    answer: 'd',
-  },
-  {
-    id: '6',
-    prompt: 'When was the first protest for gay and lesbian rights?',
-    choices: [
-      { id: 'a', content: '1966' },
-      { id: 'b', content: '1962' },
-      { id: 'c', content: '1984' },
-      { id: 'd', content: '1965' },
-    ],
-    answer: 'd',
-  },
+      { id: "a", content: "1977" }
+      { id: "b", content: "1978" }
+      { id: "c", content: "1981" }
+      { id: "d", content: "1984" }
+    ]
+    answer: "b"
+  }
 ];
 
 export default jsonData;
