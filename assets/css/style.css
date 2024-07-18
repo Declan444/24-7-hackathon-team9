@@ -222,3 +222,38 @@ h6 {
 section {
   padding: 20px 0;
 }
+
+/* contact page */
+
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 1rem;
+}
+
+.form-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1 rem;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  background: rgb(241, 1, 1, 0.5);
+  background: linear-gradient(90deg, rgba(241, 1, 1, 0.5) 0%, rgb(253, 100, 29, 0.5) 20%, rgb(252, 240, 69, 0.5) 40%, rgb(2, 128, 12, 0.5) 60%, rgb(20, 1, 140, 0.5) 80%, rgb(70, 1, 73, 0.5) 100%);
+}
+
+.form-wrapper h2{
+  font-size: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contact-form {
+  margin: 1rem;
+}
+
+.contact-form-btn {
+  margin: 1rem;
+}
