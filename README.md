@@ -1,4 +1,4 @@
-# 24-7hajckathonteam-team9
+# 24/7-hackathonteam-team9
 
 View the live website [here](link here).
 
@@ -27,10 +27,14 @@ Additionally, a mini quiz will be accessible to help reinforce what has been lea
 
 As a first time visitor I want...
 
-- To immediately understand the basic concept and purpose of the website
-- To be able to intuitive understand the navigational instruments accessible on the website
-- Easily discover prominent features of the website
+- to immediately understand the basic concept and purpose of the website
+- to be able to intuitive understand the navigational instruments accessible on the website
+- easily discover prominent features of the website
 - to be able to view the device without issue regeardless of my screen size
+- to be able to easily take a quiz to test my knowledge and learn about the LGBT community
+- easily understand how the quiz works
+- track my progress during the quiz and see what question I am on
+- receive continuous feedback on my score during the quiz
 
 ### Returning Visitor Goals
 
@@ -38,6 +42,7 @@ As a returning visitor I want...
 
 - To be able to easily locate information I had previously accessed
 - To easily contact the site owner
+- reattempt the quiz in order to try and obtain a higher score
 - To try and beat my previous high score in the quiz
 
 ### Frquesnt Visitor Goals
@@ -75,5 +80,11 @@ As a returning visitor I want...
 # Deployment
 
 # Credits
+
+## Code
+
+- [Josh's CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
+
+## Images
 
 # Acknowledgements
