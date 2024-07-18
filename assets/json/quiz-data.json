@@ -8,7 +8,7 @@
       { "id": "c", "content": "1989" },
       { "id": "d", "content": "2001" }
     ],
-    "answers": [["b"]]
+    "answer": "b"
   },
   {
     "id": "2",
@@ -19,7 +19,7 @@
       { "id": "c", "content": "1990" },
       { "id": "d", "content": "2000" }
     ],
-    "answers": [["a"]]
+    "answer": "a"
   },
   {
     "id": "3",
@@ -30,6 +30,6 @@
       { "id": "c", "content": "1984" },
       { "id": "d", "content": "1965" }
     ],
-    "answers": [["d"]]
+    "answer": "d"
   }
 ]

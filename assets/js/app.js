@@ -28,13 +28,42 @@ fetchDataAndRender('assets/json/quiz-data.json');
  */
 function initQuiz(jsonData) {
   let currQuestion = 0;
+  let currAnswer = jsonData[currQuestion].answer;
 
+  // Add an event listener to the answer options to check if the selected answer is correct
+  answerOptions.addEventListener('click', (e) => {
+    if (e.target && e.target.matches('li')) {
+      const dataID = e.target.getAttribute('data-id');
+      checkAnswer(dataID, currAnswer);
+    }
+  });
+
+  /**
+   * @param {string} dataID - The id of the selected answer
+   * @param {string} currAnswer - The correct answer to the question
+   * This function checks if the selected answer is correct
+   */
+  function checkAnswer(dataID, currAnswer) {
+    console.log(dataID, currAnswer);
+    if (dataID === currAnswer) {
+      console.log(
+        `"You selected ${dataID}, the correct answer is ${currAnswer}"`
+      );
+    } else {
+      console.log(
+        `"You selected ${dataID}, the correct answer is ${currAnswer}"`
+      );
+    }
+  }
+
+  // Update the DOM with the current question
   question.innerHTML = jsonData[currQuestion].prompt;
 
+  // Update the answer options with the current question's answers
   jsonData[0].choices.forEach((answer) => {
     let answerOption = document.createElement('li');
-    answerOption.innerHTML = answer.content;
     answerOption.setAttribute('data-id', answer.id);
+    answerOption.innerHTML = answer.content;
     answerOptions.appendChild(answerOption);
   });
 }
