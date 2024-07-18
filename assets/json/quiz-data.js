@@ -33,7 +33,7 @@ const jsonData = [
     answer: 'd',
   },
   {
-    id: '3',
+    id: '4',
     prompt: 'When was the first protest for gay and lesbian rights?',
     choices: [
       { id: 'a', content: '1966' },
@@ -44,7 +44,7 @@ const jsonData = [
     answer: 'd',
   },
   {
-    id: '3',
+    id: '5',
     prompt: 'When was the first protest for gay and lesbian rights?',
     choices: [
       { id: 'a', content: '1966' },
@@ -55,7 +55,7 @@ const jsonData = [
     answer: 'd',
   },
   {
-    id: '3',
+    id: '6',
     prompt: 'When was the first protest for gay and lesbian rights?',
     choices: [
       { id: 'a', content: '1966' },

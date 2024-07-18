@@ -1,12 +1,28 @@
 import jsonData from './../json/quiz-data.js';
 
+// Vars for global scope as the data is passed around between a lot of functions
 var quizContent = jsonData;
 var currentQuestion = 0;
 var correctAnswers = 0;
+var questionsList = [];
+while (questionsList.length < quizContent.length) {
+  questionsList.push(quizContent[questionsList.length].id);
+}
 
-function showQuestion(quizContent, currentQuestion) {
-  updateQuestion(quizContent[currentQuestion].prompt);
-  updateAnswers(quizContent[currentQuestion].choices);
+console.log(questionsList);
+
+function showQuestion() {
+  // Generate random number
+  const randomQuestion = Math.floor(Math.random() * questionsList.length);
+  // Remove that value from questionList
+  questionsList = questionsList.filter(
+    (question) => question !== questionsList[randomQuestion]
+  );
+  updateQuestion(
+    quizContent[randomQuestion].prompt,
+    quizContent[randomQuestion].img ? quizContent[randomQuestion].img : null
+  );
+  updateAnswers(quizContent[randomQuestion].choices);
 }
 
 function checkAnswer(selected) {
@@ -18,18 +34,23 @@ function checkAnswer(selected) {
   } else {
     console.log('incorrect');
   }
-  currentQuestion++;
   setTimeout(() => {
-    if (currentQuestion < quizContent.length) {
-      showQuestion(quizContent, currentQuestion);
+    console.log('Current length of list:');
+    console.log(questionsList.length);
+    if (questionsList.length > 0) {
+      showQuestion();
     } else {
-      const quizContainer = document.querySelector('.quiz-container');
-      quizContainer.innerHTML = `<p>You got ${correctAnswers} out of ${questions.length} questions.</p>`;
+      console.log('Game Over');
     }
   }, 2000);
 }
 
-function updateQuestion(quizContentQuestion) {
+function updateQuestion(quizContentQuestion, imgSrc) {
+  const questionIMG = document.getElementById('questionImage');
+  if (imgSrc) {
+    questionIMG.src = 'imgSrc';
+    questionIMG.style.display = 'block';
+  }
   const questionText = document.getElementById('question');
   questionText.textContent = quizContentQuestion;
 }
