@@ -130,3 +130,95 @@ h6 {
   background-position: top center;
   z-index: 1;
 }
+
+/* about us page */
+
+.about-us {
+  color: blueviolet;
+  margin: 70px;
+  text-align: center;
+}
+
+
+
+#logo-about-us {
+  align-items: center;
+  padding-top: 0.5rem!important;
+  padding-bottom: 0.5rem!important;
+  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.about-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  border: 5px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%);
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.3);
+}
+
+.avatar:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  filter: grayscale(0%);
+}
+
+.about-card-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.about-card-text i {
+  color: #fff;
+}
+
+.about-card-text i:hover {
+  color: #073607;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: auto;
+}
+
+/* Center content in each row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Center images and text in each column */
+.col-md-6, .col-sm-12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Center text in the about-card-text */
+.about-card-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Add some padding to the section for spacing */
+section {
+  padding: 20px 0;
+}
