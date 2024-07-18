@@ -54,6 +54,10 @@ As a returning visitor I want...
 ### Imagery
 
 ### Wireframes
+![index](https://github.com/user-attachments/assets/ea9ce719-cfdd-432f-a1db-ff893d9b8217)
+![about](https://github.com/user-attachments/assets/fa11ee06-2b77-45cc-aafc-a306b9aff23f)
+![contact](https://github.com/user-attachments/assets/8ca2ebe3-eeb0-4f46-b903-98a2675d2763)
+![quiz](https://github.com/user-attachments/assets/f917fdfb-411f-4c1c-a48e-5de3c49852b8)
 
 #### Homepage
 
@@ -76,6 +80,7 @@ As a returning visitor I want...
 - Jest
 
 # Testing
+
 
 # Deployment
 
