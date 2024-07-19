@@ -2,9 +2,9 @@ import jsonData from './../json/quiz-data.js';
 
 // Vars for global scope as the data is passed around between a lot of functions
 var quizContent = jsonData;
-var currentQuestion = 0;
 var correctAnswers = 0;
 var questionsList = [];
+var randomQuestion;
 // Create a list of questions to be asked in random order and then remove them from the list as they are asked to avoid duplicates
 while (questionsList.length < quizContent.length) {
   questionsList.push(quizContent[questionsList.length].id);
@@ -15,8 +15,11 @@ while (questionsList.length < quizContent.length) {
  * @param {Array} quizContent - Array of objects containing the quiz data
  */
 function showQuestion() {
+  // Get the feedback text element and clear it
+  const feedbackText = document.getElementById('feedback-text');
+  feedbackText.textContent = '';
   // Generate random number
-  const randomQuestion = Math.floor(Math.random() * questionsList.length);
+  randomQuestion = Math.floor(Math.random() * questionsList.length);
   // Remove that value from questionList
   questionsList = questionsList.filter(
     (question) => question !== questionsList[randomQuestion]
@@ -41,14 +44,15 @@ function showQuestion() {
  * @param {*} selected - The answer that the user selected
  */
 function checkAnswer(selected) {
-  if (selected === jsonData[currentQuestion].answer) {
-    console.log('correct');
+  const feedbackText = document.getElementById('feedback-text');
+  if (selected === jsonData[randomQuestion].answer) {
+    feedbackText.textContent = 'Correct!';
     // Update the score
     const score = document.getElementById('score');
     correctAnswers++;
     score.innerHTML = correctAnswers;
   } else {
-    console.log('incorrect');
+    feedbackText.textContent = `Incorrect! The correct answer was ${jsonData[randomQuestion].answer}`;
   }
   // Update the current question after a delay
   setTimeout(() => {
@@ -69,7 +73,6 @@ function checkAnswer(selected) {
 }
 
 /**
- *
  * @param {*} quizContentQuestion - The question to be asked
  * @param {*} imgSrc - The image source for the question if there is one
  */
@@ -138,4 +141,4 @@ function showFinalScore(correctAnswers) {
   }
 }
 
-showQuestion(quizContent, currentQuestion);
+showQuestion();
