@@ -88,13 +88,11 @@
                     <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                 </div>
                 <div class="contact-form">
-                  <span class="form-label">Email:</span>
-                  <input
-                    class="form-control"
-                    type="email"
-                    placeholder="Email"
-                    required="required"
-                  />
+                    <label for="email">Email address</label>
+                    <input class="form-control" id="email_id" type="email" placeholder="name@example.com"
+                        data-sb-validations="required,email" />
+                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                 </div>
                 <div class="contact-form">
                   <span class="form-label">Phone:</span>
