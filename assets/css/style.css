@@ -304,6 +304,27 @@ section {
   display: none;
 }
 
+.rainbow {
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rainbow .rainbow-static {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.rainbow #rainbow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom center;
+  transform: rotate(-180deg);
+  transition: all 2s ease;
+}
+
 /* Hero Styles */
 
 .hero {
