@@ -20,61 +20,90 @@
     <script src="assets/js/app.js" type="module" defer></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="index.html">Navbar</a>
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="quiz.html"
-                >Quiz <span class="sr-only">(current)</span></a
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="learn.html">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <main>
-      <section class="p-5">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1>Quiz</h1>
-              <img
-                src="assets/img/quiz.jpg"
-                class="img-fluid"
-                alt="Quiz"
-                style="display: none"
-                id="questionImage"
-              />
-              <p id="question"></p>
-              <ul id="choices"></ul>
+      <section class="hero">
+        <div class="text-white d-flex flex-column align-items-start justify-content-center bg-black-transparent">
+          <div class="container p-2 mt-1">
+            <div class="col-md-6">
+              <h1 class="mb-4 mt-2 font-weight-bold">Test Your <span style="color: #9B5DE5;">Knowledge</span></h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <p>Your Score is: <span id="score">0</span></p>
-            </div>
+        </div>
+      </section>
+
+      <section class="container quiz-container">
+        <div class="row">
+          <div class="col col-md-6 d-flex flex-column" id="quiz">
+            <h1 class="text-center mt-3 mb-3">Quiz</h1>
+            <p class="text-center">Test your knowledge by answering 10 questions below and seeing how you score!</p>
+            <img
+              src="assets/img/quiz.jpg"
+              class="img-fluid"
+              alt="Quiz"
+              style="display: none"
+              id="questionImage"
+            />
+            <p id="question" class="p-3 mt-4 mb-4"></p>
+            <ul id="choices" class="list-unstyled"></ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-6">
+            <p id="feedback-text"></p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col col-md-6" id="score-counter">
+            <p>Your Score is: <span id="score">0</span></p>
+          </div>
+          <div class="col col-md-6" id="final-score-display">
+            <h2>Congratulations!</h2>
+            <p>Your final score is: <span id="finalScore">0</span></p>
+            <p class="highscore">Your Highest score is...<span id="best-highscore"></p>
+              <div class="rainbow">
+                <img src="assets/img/rainbow.png" alt="rainbow" class="rainbow-static"/>
+                <img src="assets/img/rainbow.png" alt="rainbow overlay" id="rainbow-overlay">
+              </div>
+              <div class="pt-5">
+                <a href="quiz.html" class="btn btn-dark">Try Again?</a>
+              </div>
           </div>
         </div>
       </section>

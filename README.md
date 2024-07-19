@@ -1,6 +1,6 @@
 # 24/7-hackathonteam-team9
 
-View the live website [here](link here).
+View the live website [here](https://declan444.github.io/24-7-hackathon-team9/).
 
 # Contents
 
@@ -54,6 +54,7 @@ As a returning visitor I want...
 ### Imagery
 
 ### Wireframes
+
 ![index](https://github.com/user-attachments/assets/ea9ce719-cfdd-432f-a1db-ff893d9b8217)
 ![about](https://github.com/user-attachments/assets/fa11ee06-2b77-45cc-aafc-a306b9aff23f)
 ![contact](https://github.com/user-attachments/assets/8ca2ebe3-eeb0-4f46-b903-98a2675d2763)
@@ -81,7 +82,6 @@ As a returning visitor I want...
 
 # Testing
 
-
 # Deployment
 
 # Credits
@@ -90,8 +90,19 @@ As a returning visitor I want...
 
 - [Josh's CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 - [Bootstrap](https://getbootstrap.com/)
+- [Google Fonts](https://fonts.google.com)
 
 ## Images
+
+- [Unsplash](https://unsplash.com/) - For imagery used across the site
+
+## Content
+
+- [Stonewall](https://www.stonewall.org.uk/list-lgbtq-terms) - For a list of terminology and their explainations
+
+## Programs
+
+-[ClodConvert](https://cloudconvert.com/) - For editing and optimizing images
 
 # Acknowledgements
 

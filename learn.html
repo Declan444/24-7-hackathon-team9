@@ -20,46 +20,513 @@
     <script src="assets/js/app.js" defer></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="index.html">Navbar</a>
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/quiz.html">Quiz</a>
+              <a class="nav-link" href="quiz.html">Quiz</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="learn.html">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <main>
-        <section>
-            <div>
-              <h1> This is the Learning page </h1>
+      <section class="hero">
+        <div
+          class="text-white d-flex flex-column align-items-start justify-content-center bg-black-transparent"
+        >
+          <div class="container p-5">
+            <div class="col-md-6">
+              <h1 class="mb-4 mt-2 font-weight-bold">
+                Improve Your <span style="color: #9b5de5">Knowledge</span>
+              </h1>
+              <p>
+                The LGBT community has a rich and diverse history and community,
+                learn more about them below!
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>Terminology</h2>
+              <p>
+                There are many terms in the LGBT community that you may not be
+                familiar with. We've collated some of the more common ones to
+                help you understand the community better.
+              </p>
+            </div>
+          </div>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h3>Abro (sexual and romantic)</h3>
+                <p>
+                  A word used to describe people who have a fluid sexual and/or
+                  romantic orientation which changes over time, or the course of
+                  their life. They may use different terms to describe
+                  themselves over time.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Ace</h3>
+                <p>
+                  An umbrella term used specifically to describe a lack of,
+                  varying, or occasional experiences of sexual attraction. This
+                  encompasses asexual people as well as those who identify as
+                  demisexual and grey-sexual. Ace people who experience romantic
+                  attraction or occasional sexual attraction might also use
+                  terms such as gay, bi, lesbian, straight and queer in
+                  conjunction with asexual to describe the direction of their
+                  romantic or sexual attraction.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Allo (sexual and romantic)</h3>
+                <p>
+                  Allo people experience sexual and romantic attraction, and do
+                  not identify as on the ace or aro spectrum. Allo is to ace and
+                  aro spectrum identities, as straight is to LGB+ spectrum
+                  identities. It is important to use words that equalise
+                  experience, otherwise the opposite to ace and aro becomes
+                  ‘normal’ which is stigmatising.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Aro</h3>
+                <p>
+                  An umbrella term used specifically to describe a lack of,
+                  varying, or occasional experiences of romantic attraction.
+                  This encompasses aromantic people as well as those who
+                  identify as demiromantic and grey-romantic. Aro people who
+                  experience sexual attraction or occasional romantic attraction
+                  might also use terms such as gay, bi, lesbian, straight and
+                  queer in conjunction with asexual to describe the direction of
+                  their attraction.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Aromantic</h3>
+                <p>
+                  A person who does not experience romantic attraction. Some
+                  aromantic people experience sexual attraction, while others do
+                  not. Aromantic people who experience sexual attraction or
+                  occasional romantic attraction might also use terms such as
+                  gay, bi, lesbian, straight and queer in conjunction with
+                  asexual to describe the direction of their attraction.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Asexual</h3>
+                <p>
+                  A person who does not experience sexual attraction. Some
+                  asexual people experience romantic attraction, while others do
+                  not. Asexual people who experience romantic attraction might
+                  also use terms such as gay, bi, lesbian, straight and queer in
+                  conjunction with asexual to describe the direction of their
+                  romantic attraction.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Ally</h3>
+                <p>
+                  A (typically) straight and/or cis person who supports members
+                  of the LGBT community.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Bi</h3>
+                <p>
+                  Bi is an umbrella term used to describe a romantic and/or
+                  sexual orientation towards more than one gender. Bi people may
+                  describe themselves using one or more of a wide variety of
+                  terms, including, but not limited to, bisexual, pan, queer,
+                  and some other non-monosexual and non-monoromantic identities.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Biphobia</h3>
+                <p>
+                  The fear or dislike of someone who identifies as bi based on
+                  prejudice or negative attitudes, beliefs or views about bi
+                  people. Biphobic bullying may be targeted at people who are,
+                  or who are perceived to be, bi.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Cisgender or Cis</h3>
+                <p>
+                  Someone whose gender identity is the same as the sex they were
+                  assigned at birth. Non-trans is also used by some people.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>​Coming out</h3>
+                <p>
+                  When a person first tells someone/others about their
+                  orientation and/or gender identity.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Deadnaming</h3>
+                <p>
+                  Calling someone by their birth name after they have changed
+                  their name. This term is often associated with trans people
+                  who have changed their name as part of their transition.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Demi (sexual and romantic)</h3>
+                <p>
+                  An umbrella term used to describe people who may only feel
+                  sexually or romantically attracted to people with whom they
+                  have formed an emotional bond. People may also use terms such
+                  as gay, bi, lesbian, straight and queer in conjunction with
+                  demi to explain the direction of romantic or sexual attraction
+                  as they experience it.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Femme</h3>
+                <p>
+                  Femme is a term used in LGBT culture to describe someone who
+                  expresses themselves in a typically feminine way. There are
+                  other identities within the scope of femme, such as ‘low
+                  femme’, ‘high femme’, and ‘hard femme’. You shouldn’t use
+                  these terms about someone unless you know they identify with
+                  them.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Gay</h3>
+                <p>
+                  Refers to a man who has a romantic and/or sexual orientation
+                  towards men. Also a generic term for lesbian and gay sexuality
+                  - some women define themselves as gay rather than lesbian.
+                  Some non-binary people may also identify with this term.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>​Gender dysphoria</h3>
+                <p>
+                  Used to describe when a person experiences discomfort or
+                  distress because there is a mismatch between their sex
+                  assigned at birth and their gender identity. This is also the
+                  clinical diagnosis for someone who doesn’t feel comfortable
+                  with the sex they were assigned at birth.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Gender expression</h3>
+                <p>
+                  How a person chooses to outwardly express their gender, within
+                  the context of societal expectations of gender. A person who
+                  does not conform to societal expectations of gender may not,
+                  however, identify as trans.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Gender identity</h3>
+                <p>
+                  A person’s innate sense of their own gender, whether male,
+                  female or something else (see non-binary below), which may or
+                  may not correspond to the sex assigned at birth.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Grey (sexual and romantic)</h3>
+                <p>
+                  Also known as grey-A, this is an umbrella term which describes
+                  people who experience attraction occasionally, rarely, or only
+                  under certain conditions. People may also use terms such as
+                  gay, bi, lesbian, straight and queer in conjunction with grey
+                  to explain the direction of romantic or sexual attraction as
+                  they experience it.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Intersex</h3>
+                <p>
+                  A term used to describe a person who may have the biological
+                  attributes of both sexes or whose biological attributes do not
+                  fit with societal assumptions about what constitutes male or
+                  female. Intersex people may identify as male, female or
+                  non-binary. Stonewall works with intersex groups to provide
+                  its partners and stakeholders information and evidence about
+                  areas of disadvantage experienced by intersex people but does
+                  not, after discussions with members of the intersex community,
+                  include intersex issues as part of its current remit at this
+                  stage.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Lesbophobia</h3>
+                <p>
+                  The fear or dislike of someone because they are or are
+                  perceived to be a lesbian.​
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>LGBTQ+</h3>
+                <p>
+                  The acronym for lesbian, gay, bi, trans, queer, questioning
+                  and ace.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Outed</h3>
+                <p>
+                  When a lesbian, gay, bi or trans person’s sexual orientation
+                  or gender identity is disclosed to someone else without their
+                  consent.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Pan</h3>
+                <p>
+                  Refers to a person whose romantic and/or sexual attraction
+                  towards others is not limited by sex or gender.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Questioning</h3>
+                <p>
+                  The process of exploring your own sexual orientation and/or
+                  gender identity.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Transitioning</h3>
+                <p>
+                  The steps a trans person may take to live in the gender with
+                  which they identify. Each person’s transition will involve
+                  different things. For some this involves medical intervention,
+                  such as hormone therapy and surgeries, but not all trans
+                  people want or are able to have this. Transitioning also might
+                  involve things such as telling friends and family, dressing
+                  differently and changing official documents.
+                </p>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col pb-2">
+              <h2>History</h2>
+              <p>
+                The history of the LGBT (lesbian, gay, bisexual, and
+                transgender) community is rich with significant events and
+                milestones that have shaped its current landscape. Here is a
+                brief overview:
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Ancient and Early History</h3>
+              <h4>Ancient Civilizations</h4>
+              <p>
+                Homosexuality was documented in ancient civilizations, including
+                Greece, Rome, Egypt, and China. In many of these societies,
+                same-sex relationships were accepted or even celebrated.
+              </p>
+              <h4>Middle Ages</h4>
+              <p>
+                Attitudes towards homosexuality became more negative with the
+                rise of Christianity in Europe. Sodomy laws were enacted, and
+                homosexual behavior was often punished severely.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3>19th and Early 20th Century</h3>
+              <h4>1869</h4>
+              <p>
+                The term "homosexuality" was coined by Karl-Maria Kertbeny, an
+                Austrian-Hungarian journalist, marking the beginning of modern
+                discussions on sexual orientation.
+              </p>
+              <h4>1897</h4>
+              <p>
+                The Scientific-Humanitarian Committee was founded in Germany by
+                Magnus Hirschfeld, advocating for homosexual rights and the
+                decriminalization of homosexuality.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="assets/img/pride-flag.webp" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-6">
+              <h3>Mid-20th Century</h3>
+
+              <h4>1950</h4>
+              <p>
+                The Mattachine Society, one of the first LGBT organizations in
+                the United States, was founded by Harry Hay.
+              </p>
+              <h4>1952</h4>
+              <p>
+                The American Psychiatric Association (APA) classified
+                homosexuality as a mental disorder in its Diagnostic and
+                Statistical Manual of Mental Disorders (DSM).
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h3>1960s and 1970s</h3>
+
+              <h4>1969</h4>
+              <p>
+                The Stonewall Riots in New York City marked a turning point in
+                the LGBT rights movement. Following a police raid on the
+                Stonewall Inn, a gay bar, members of the LGBT community fought
+                back, leading to several days of protests.
+              </p>
+              <h4>1970</h4>
+              <p>
+                The first Gay Pride marches were held in New York, Los Angeles,
+                and Chicago to commemorate the Stonewall Riots.
+              </p>
+              <h4>1973</h4>
+              <p>
+                The APA removed homosexuality from the DSM, declassifying it as
+                a mental disorder.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3>1980s and 1990s</h3>
+
+              <h4>1981</h4>
+              <p>
+                The AIDS epidemic began, disproportionately affecting the gay
+                community. This crisis spurred activism and awareness.
+              </p>
+              <h4>1987</h4>
+              <p>
+                ACT UP (AIDS Coalition to Unleash Power) was founded to advocate
+                for people with AIDS and demand action from the government.
+              </p>
+              <h4>1993</h4>
+              <p>
+                "Don't Ask, Don't Tell" was implemented in the U.S. military,
+                allowing gay and bisexual people to serve as long as they did
+                not disclose their sexual orientation.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h3>21st Century</h3>
+
+              <h4>2003</h4>
+              <p>
+                The U.S. Supreme Court ruled in Lawrence v. Texas that sodomy
+                laws were unconstitutional, effectively decriminalizing
+                homosexual acts in the United States.
+              </p>
+              <h4>2010</h4>
+              <p>
+                "Don't Ask, Don't Tell" was repealed, allowing LGBT individuals
+                to serve openly in the U.S. military.
+              </p>
+              <h4>2015</h4>
+              <p>
+                The U.S. Supreme Court ruled in Obergefell v. Hodges that
+                same-sex marriage is a constitutional right, legalizing it
+                nationwide.
+              </p>
+              <h4>2020</h4>
+              <p>
+                The U.S. Supreme Court ruled in Bostock v. Clayton County that
+                the Civil Rights Act of 1964 protects employees from
+                discrimination based on sexual orientation or gender identity.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3>Recent Developments</h3>
+
+              <h4>2021-Present</h4>
+              <p>
+                There has been a growing recognition of non-binary and
+                transgender rights, with increased visibility and advocacy for
+                these communities. Legislative battles continue over issues such
+                as transgender rights, conversion therapy bans, and
+                discrimination protections.
+              </p>
+
+              <p>
+                The LGBT movement has evolved from early struggles for
+                decriminalization to broader fights for equal rights and
+                societal acceptance. Each milestone has built upon the last,
+                pushing the movement towards greater visibility and equality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
