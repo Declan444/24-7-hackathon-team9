@@ -56,6 +56,7 @@ function checkAnswer(selected) {
   }
   // Update the current question after a delay
   setTimeout(() => {
+    console.log(questionsList.length);
     // Check if there are any questions left in the list
     if (questionsList.length > 0) {
       // Update the current question
@@ -76,6 +77,8 @@ function checkAnswer(selected) {
  */
 function updateQuestion(quizContentQuestion, imgSrc) {
   const questionIMG = document.getElementById('questionImage');
+  // Hide the image if there is no image source
+  questionIMG.style.display = 'none';
   // Check if there is an image source and if there is, display it
   if (imgSrc) {
     questionIMG.src = imgSrc;
@@ -152,11 +155,3 @@ function showFinalScore(correctAnswers) {
 }
 
 showQuestion();
-
-module.exports = {
-  showQuestion,
-  checkAnswer,
-  updateQuestion,
-  updateAnswers,
-  showFinalScore,
-};
