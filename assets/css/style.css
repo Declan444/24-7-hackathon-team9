@@ -347,6 +347,22 @@ section {
   transform: translateY(-50%) rotate(180deg);
 }
 
+/* footer */
+
+.footer {
+  color: #020202;
+  font-weight: bold;
+}
+
+.footer i {
+  color: #020202;
+}
+
+.footer a {
+  color: #020202;
+  text-decoration: none;
+}
+
 /* quiz page */
 
 #choices {
