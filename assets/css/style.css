@@ -370,3 +370,16 @@ section {
 .hero p {
   color: #fff;
 }
+
+/* Learn page carousel styles */
+
+.carousel-inner {
+  padding: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: #222;
+  border-radius: 25px;
+  width: 25px;
+}
