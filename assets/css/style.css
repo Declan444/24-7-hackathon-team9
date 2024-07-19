@@ -116,6 +116,8 @@ p {
       calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
     )
     translateZ(550px);
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 .carousel-3d .slider .item img {
@@ -349,10 +351,6 @@ section {
 }
 
 /* quiz page */
-
-.quiz-container {
-  margin-top: 56px;
-}
 
 #choices {
   height: 200px;
