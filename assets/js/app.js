@@ -78,7 +78,7 @@ function updateQuestion(quizContentQuestion, imgSrc) {
   const questionIMG = document.getElementById('questionImage');
   // Check if there is an image source and if there is, display it
   if (imgSrc) {
-    questionIMG.src = 'imgSrc';
+    questionIMG.src = imgSrc;
     questionIMG.style.display = 'block';
   }
   // Update the question text
