@@ -90,6 +90,7 @@ As a returning visitor I want...
 
 - [Josh's CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 - [Bootstrap](https://getbootstrap.com/)
+- [Google Fonts](https://fonts.google.com)
 
 ## Images
 
