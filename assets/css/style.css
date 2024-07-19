@@ -294,8 +294,58 @@ section {
   margin: 1rem;
 }
 
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-form-btn {
+  justify-content: center;
   margin: 1rem;
+  position: relative;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px 50px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 5px;
+  background-size: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+
+.contact-form-btn::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: -10px;
+  top: 50%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50px;
+  background-image: conic-gradient(
+    rgba(241, 1, 1),
+    rgb(253, 100, 29),
+    rgb(252, 240, 69),
+    rgb(2, 128, 12),
+    rgb(20, 1, 140),
+    rgb(70, 1, 73));
+  filter: blur(10px);
+  transform: translateY(-50%) rotate(0);
+  transition: transform 0.3s;
+}
+
+.contact-form-btn-text {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-form-btn:hover::before {
+  transform: translateY(-50%) rotate(180deg);
 }
 
 /* quiz page */
