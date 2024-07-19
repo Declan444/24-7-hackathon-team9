@@ -82,13 +82,10 @@
             <div class="input-field">
               <form>
                 <div class="contact-form">
-                  <span class="form-label">Name:</span>
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Name"
-                    required="required"
-                  />
+                    <label for="name">Full name</label>
+                    <input class="form-control" id="fullName" type="text" placeholder="Enter your name..."
+                        data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                 </div>
                 <div class="contact-form">
                   <span class="form-label">Email:</span>
