@@ -56,8 +56,6 @@ function checkAnswer(selected) {
   }
   // Update the current question after a delay
   setTimeout(() => {
-    console.log('Current length of list:');
-    console.log(questionsList.length);
     // Check if there are any questions left in the list
     if (questionsList.length > 0) {
       // Update the current question
@@ -66,7 +64,7 @@ function checkAnswer(selected) {
       // Show the final score
       showFinalScore(correctAnswers);
     }
-  }, 1500);
+  }, 2000);
   // Add second delay after new question is loaded to avoid clicking
   // the same answer twice and scoring twice.
   setTimeout(() => {}, 500);
