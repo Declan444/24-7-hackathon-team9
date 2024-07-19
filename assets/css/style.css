@@ -365,3 +365,8 @@ section {
   font-size: 2.5rem;
   text-align: center;
 }
+
+.contact-teammate {
+height: fit-content;
+margin: 10px;
+}
