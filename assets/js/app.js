@@ -40,11 +40,11 @@ function checkAnswer(selected) {
     if (questionsList.length > 0) {
       showQuestion();
     } else {
-      console.log('Game Over');
+      showFinalScore(correctAnswers);
     }
   }, 1500);
-  // Add second delay after new question is loaded to avoid clicking 
-  // the same answer twice and scoring twice. 
+  // Add second delay after new question is loaded to avoid clicking
+  // the same answer twice and scoring twice.
   setTimeout(() => {}, 500);
 }
 
@@ -66,11 +66,37 @@ function updateAnswers(quizContentAnswers) {
     li.textContent = choice.content;
     li.setAttribute('data-id', index);
     li.setAttribute('data-choiceID', choice.id);
-    li.addEventListener('click', (e) => {
-      checkAnswer(e.target.getAttribute('data-choiceID'));
-    }, {once: true}); // {once: true} makes the event happen only once.
+    li.addEventListener(
+      'click',
+      (e) => {
+        checkAnswer(e.target.getAttribute('data-choiceID'));
+      },
+      { once: true }
+    ); // {once: true} makes the event happen only once.
     choices.appendChild(li);
   });
+}
+
+function showFinalScore(correctAnswers) {
+  const finalScore = document.getElementById('finalScore');
+  const finalScoreDisplay = document.getElementById('final-score-display');
+  const scoreCounter = document.getElementById('score-counter');
+  scoreCounter.style.display = 'none';
+  finalScoreDisplay.style.display = 'block';
+  finalScore.innerHTML = correctAnswers;
+  // Check if the current score is higher than the high score and if current score is greater, update the highscore
+  let currHighScore = localStorage.getItem('highScore');
+  const bestHighScore = document.getElementById('best-highscore');
+
+  if (currHighScore && currHighScore < correctAnswers) {
+    currHighScore = correctAnswers;
+    bestHighScore.innerHTML = currHighScore;
+  } else if (!currHighScore) {
+    localStorage.setItem('highScore', correctAnswers);
+    bestHighScore.innerHTML = correctAnswers;
+  } else {
+    bestHighScore.innerHTML = currHighScore;
+  }
 }
 
 showQuestion(quizContent, currentQuestion);

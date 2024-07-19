@@ -50,8 +50,13 @@ h6 {
   text-align: center;
   overflow: hidden;
   position: relative;
-  margin-top: 56px;
   background: url('../img/pride-background.jpg') no-repeat center center/cover;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-3d {
+    height: 100vh;
+  }
 }
 
 .carousel-3d .slider {
@@ -139,12 +144,10 @@ h6 {
   text-align: center;
 }
 
-
-
 #logo-about-us {
   align-items: center;
-  padding-top: 0.5rem!important;
-  padding-bottom: 0.5rem!important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
   padding-top: 55px;
   display: flex;
   flex-direction: column;
@@ -204,7 +207,8 @@ h6 {
 }
 
 /* Center images and text in each column */
-.col-md-6, .col-sm-12 {
+.col-md-6,
+.col-sm-12 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -225,7 +229,7 @@ section {
 
 /* contact page */
 
-.form-container{
+.form-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,10 +245,18 @@ section {
   width: 100%;
   height: 100%;
   background: rgb(241, 1, 1, 0.5);
-  background: linear-gradient(90deg, rgba(241, 1, 1, 0.5) 0%, rgb(253, 100, 29, 0.5) 20%, rgb(252, 240, 69, 0.5) 40%, rgb(2, 128, 12, 0.5) 60%, rgb(20, 1, 140, 0.5) 80%, rgb(70, 1, 73, 0.5) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 1, 1, 0.5) 0%,
+    rgb(253, 100, 29, 0.5) 20%,
+    rgb(252, 240, 69, 0.5) 40%,
+    rgb(2, 128, 12, 0.5) 60%,
+    rgb(20, 1, 140, 0.5) 80%,
+    rgb(70, 1, 73, 0.5) 100%
+  );
 }
 
-.form-wrapper h2{
+.form-wrapper h2 {
   font-size: 3rem;
   margin-top: 1rem;
   text-align: center;
@@ -287,4 +299,8 @@ section {
   width: 220px;
   height: 45px;
   cursor: pointer;
+}
+
+#final-score-display {
+  display: none;
 }
