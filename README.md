@@ -96,6 +96,10 @@ As a returning visitor I want...
 
 - [Unsplash](https://unsplash.com/) - For imagery used across the site
 
+## Videos
+
+- [Pexels](https://videos/pexels.com) - For video used on the home page
+
 ## Content
 
 - [Stonewall](https://www.stonewall.org.uk/list-lgbtq-terms) - For a list of terminology and their explainations
