@@ -121,6 +121,9 @@ function showFinalScore(correctAnswers) {
   const finalScoreDisplay = document.getElementById('final-score-display');
   const scoreCounter = document.getElementById('score-counter');
   const quizContainer = document.getElementById('quiz');
+  const feedbackText = document.getElementById('feedback-text');
+  feedbackText.textContent = '';
+  quizContainer.classList.remove('d-flex');
   quizContainer.style.display = 'none';
   scoreCounter.style.display = 'none';
   finalScoreDisplay.style.display = 'block';
@@ -142,11 +145,12 @@ function showFinalScore(correctAnswers) {
     bestHighScore.innerHTML = currHighScore;
   }
   let scorePercent = (correctAnswers / quizContent.length) * 100;
-  console.log(`Score percentage: ${scorePercent}`);
   let moveamount = -180 + scorePercent * 1.8;
-  console.log(moveamount);
   const rainbowOverlay = document.getElementById('rainbow-overlay');
-  rainbowOverlay.style.transform = `rotate(${moveamount}deg)`;
+
+  setTimeout(() => {
+    rainbowOverlay.style.transform = `rotate(${moveamount}deg)`;
+  }, 3000);
 }
 
 showQuestion();
