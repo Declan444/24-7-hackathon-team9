@@ -95,12 +95,11 @@
                     <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                 </div>
                 <div class="contact-form">
-                  <span class="form-label">Phone:</span>
-                  <input
-                    class="form-control"
-                    type="tel"
-                    placeholder="Phone Number"
-                  />
+                    <label for="phone">Phone number</label>
+                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                        data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                    </div>
                 </div>
                 <div class="contact-form">
                   <span class="form-label">Comments:</span>
