@@ -402,6 +402,39 @@ section {
   transition: all 2s ease;
 }
 
+.rainbow-text {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background-clip: text;
+  color: transparent;
+  animation: rainbowFlash 15s infinite ease-in-out;
+}
+
+@keyframes rainbowFlash {
+  0% {
+      background-position: 0% 0%;
+      color: black;
+  }
+  10% {
+      background-position: 80% 0%;
+      color: transparent;
+  }
+  20% {
+      background-position: 100% 0%;
+      color: transparent;
+  }
+  30% {
+      background-position: 0% 0%;
+      color: black;
+  }
+  100% {
+      background-position: 0% 0%;
+      color: black;
+  }
+}
+
+
 /* Hero Styles */
 
 .hero {
