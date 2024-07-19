@@ -1,6 +1,6 @@
 # 24/7-hackathonteam-team9
 
-View the live website [here](link here).
+View the live website [here](https://declan444.github.io/24-7-hackathon-team9/).
 
 # Contents
 
