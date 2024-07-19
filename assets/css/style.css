@@ -445,3 +445,44 @@ section {
   border-radius: 25px;
   width: 25px;
 }
+
+/* Intro section */
+
+.welcome-section {
+  position:relative;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.white-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: -1;
+}
+
+.welcome-text {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-text h2 {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
