@@ -18,6 +18,16 @@
       defer
     ></script>
     <script src="assets/js/app.js" defer></script>
+    <!-- Email JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "5rhx797RlUzGrL0aO",
+            });
+        })();
+    </script>
   </head>
 
   <body>
@@ -109,12 +119,14 @@
                     <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
                     </div>
                 </div>
-                <button class="contact-form-btn" type="button">Submit</button>
+                <button class="contact-form-btn" id="submitButton" type="button">Submit</button>
               </form>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <!-- Core theme JS-->
+    <script src="assets/js/contact.js"></script>
   </body>
 </html>
