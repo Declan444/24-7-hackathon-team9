@@ -259,14 +259,6 @@ section {
 
 /* contact page */
 
-.form-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 1rem;
-}
-
 .form-wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -284,12 +276,20 @@ section {
     rgb(20, 1, 140, 0.5) 80%,
     rgb(70, 1, 73, 0.5) 100%
   );
+  padding: 5%;
 }
 
 .form-wrapper h2 {
   font-size: 3rem;
   margin-top: 1rem;
   text-align: center;
+}
+
+.input-field {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5%;
+  background: rgb(255, 255, 255, 0.6);
 }
 
 .contact-form {
@@ -309,14 +309,11 @@ section {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  padding: 20px 50px;
-  border-radius: 50px;
+  padding: 1vh 2vh;
+  border-radius: 10px;
   font-weight: bold;
-  text-transform: uppercase;
   font-size: 24px;
-  letter-spacing: 5px;
   background-size: 100%;
-  color: #fff;
   overflow: hidden;
 }
 
@@ -328,14 +325,14 @@ section {
   top: 50%;
   width: 250px;
   height: 250px;
-  border-radius: 50px;
+  border-radius: 10px;
   background-image: conic-gradient(
-    rgba(241, 1, 1),
-    rgb(253, 100, 29),
-    rgb(252, 240, 69),
-    rgb(2, 128, 12),
-    rgb(20, 1, 140),
-    rgb(70, 1, 73));
+    rgba(241, 1, 1, 0.6),
+    rgb(253, 100, 29, 0.6),
+    rgb(252, 240, 69, 0.6),
+    rgb(2, 128, 12, 0.6),
+    rgb(20, 1, 140, 0.6),
+    rgb(70, 1, 73, 0.6));
   filter: blur(10px);
   transform: translateY(-50%) rotate(0);
   transition: transform 0.3s;
@@ -348,6 +345,22 @@ section {
 
 .contact-form-btn:hover::before {
   transform: translateY(-50%) rotate(180deg);
+}
+
+/* footer */
+
+.footer {
+  color: #020202;
+  font-weight: bold;
+}
+
+.footer i {
+  color: #020202;
+}
+
+.footer a {
+  color: #020202;
+  text-decoration: none;
 }
 
 /* quiz page */
