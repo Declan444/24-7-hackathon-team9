@@ -93,9 +93,15 @@ As a returning visitor I want...
 
 ## Images
 
+- [Unsplash](https://unsplash.com/) - For imagery used across the site
+
 ## Content
 
 - [Stonewall](https://www.stonewall.org.uk/list-lgbtq-terms) - For a list of terminology and their explainations
+
+## Programs
+
+-[ClodConvert](https://cloudconvert.com/) - For editing and optimizing images
 
 # Acknowledgements
 
