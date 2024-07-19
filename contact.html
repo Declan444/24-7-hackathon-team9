@@ -94,13 +94,13 @@
                 <div class="contact-form">
                     <label for="name">Full name</label>
                     <input class="form-control" id="fullName" type="text" placeholder="Enter your name..."
-                        data-sb-validations="required" />
+                        data-sb-validations="required" required="required"/>
                     <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                 </div>
                 <div class="contact-form">
                     <label for="email">Email address</label>
                     <input class="form-control" id="email_id" type="email" placeholder="name@example.com"
-                        data-sb-validations="required,email" />
+                        data-sb-validations="required,email" required="required"/>
                     <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                     <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                 </div>
@@ -115,7 +115,7 @@
                     <label for="message">Message</label>
                     <textarea class="form-control" id="message" type="text"
                         placeholder="Enter your message here..." style="height: 10rem"
-                        data-sb-validations="required"></textarea>
+                        data-sb-validations="required" required="required"></textarea>
                     <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
                     </div>
                 </div>
