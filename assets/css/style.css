@@ -343,11 +343,11 @@ section {
   color: #fff;
 }
 
-#declan {
+/* #declan {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 #about-background-image {
   background-image: url(/assets/img/pride-background.jpg);
