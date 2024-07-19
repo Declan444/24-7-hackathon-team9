@@ -152,3 +152,11 @@ function showFinalScore(correctAnswers) {
 }
 
 showQuestion();
+
+module.exports = {
+  showQuestion,
+  checkAnswer,
+  updateQuestion,
+  updateAnswers,
+  showFinalScore,
+};
