@@ -119,6 +119,14 @@ Imagery for the website will consist of images paying tribute to the bravery and
 
 ### W3C HTML Checks
 
+While all pages have some messages rated as "info" we have decided to ignore them as they will have little to no impact on usability or accessibility and within the scope of this project we would rather use the time elsewhere. For the sake of this project we are prioritising "warning" and "error" messages.
+
+[https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Findex.html](Report for Index)
+
+[https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fquiz.html](Report for Quiz)
+
+We have a single warning for the use of an inline styling including a CSS variable. This is only a minor concern. The inline CSS variable is implemented to avoid unecassary Javascript so this is a compromise we have discussed and are willing to make.
+
 ### W3C CSS Checks
 
 ### JSHint
