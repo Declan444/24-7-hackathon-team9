@@ -332,7 +332,8 @@ section {
     rgb(252, 240, 69, 0.6),
     rgb(2, 128, 12, 0.6),
     rgb(20, 1, 140, 0.6),
-    rgb(70, 1, 73, 0.6));
+    rgb(70, 1, 73, 0.6)
+  );
   filter: blur(10px);
   transform: translateY(-50%) rotate(0);
   transition: transform 0.3s;
@@ -365,28 +366,40 @@ section {
 
 /* quiz page */
 
+#question {
+  font-size: 1.5rem;
+}
+
 #choices {
-  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 #choices > li {
-  width: 200px;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  border: 2px solid black;
-  border-radius: 10px;
+  border: 5px solid rgba(0, 0, 0, 0.6);
+  padding: 15px 15px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 #choices > li:hover {
-  width: 220px;
-  height: 45px;
-  cursor: pointer;
+  background-color: #fff;
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
 }
 
 #final-score-display {
@@ -418,7 +431,16 @@ section {
 .rainbow-text {
   font-size: 3rem;
   font-weight: bold;
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
   background-clip: text;
   color: transparent;
   animation: rainbowFlash 15s infinite ease-in-out;
@@ -426,27 +448,39 @@ section {
 
 @keyframes rainbowFlash {
   0% {
-      background-position: 0% 0%;
-      color: black;
+    background-position: 0% 0%;
+    color: black;
   }
   10% {
-      background-position: 80% 0%;
-      color: transparent;
+    background-position: 80% 0%;
+    color: transparent;
   }
   20% {
-      background-position: 100% 0%;
-      color: transparent;
+    background-position: 100% 0%;
+    color: transparent;
   }
   30% {
-      background-position: 0% 0%;
-      color: black;
+    background-position: 0% 0%;
+    color: black;
   }
   100% {
-      background-position: 0% 0%;
-      color: black;
+    background-position: 0% 0%;
+    color: black;
   }
 }
 
+.countdown-bar {
+  position: relative;
+  height: 5px;
+  width: 100%;
+}
+
+#countdown-bar-fill {
+  width: 100%;
+  height: 5px;
+  background-color: #b827fc;
+  transition: width 2s ease;
+}
 
 /* Hero Styles */
 
@@ -482,7 +516,7 @@ section {
 /* Intro section */
 
 .welcome-section {
-  position:relative;
+  position: relative;
   height: 100vh;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);

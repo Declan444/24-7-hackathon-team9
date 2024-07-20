@@ -5,6 +5,7 @@ var quizContent = jsonData;
 var correctAnswers = 0;
 var questionsList = [];
 var randomQuestion;
+var questionNumber = 0;
 // Create a list of questions to be asked in random order and then remove them from the list as they are asked to avoid duplicates
 while (questionsList.length < quizContent.length) {
   questionsList.push(quizContent[questionsList.length].id);
@@ -15,6 +16,9 @@ while (questionsList.length < quizContent.length) {
  * @param {Array} quizContent - Array of objects containing the quiz data
  */
 function showQuestion() {
+  const countdownBarLoader = document.getElementById('countdown-bar-fill');
+  countdownBarLoader.style.width = '100%';
+  questionNumber++;
   // Get the feedback text element and clear it
   const feedbackText = document.getElementById('feedback-text');
   feedbackText.textContent = '';
@@ -54,11 +58,13 @@ function checkAnswer(selected) {
   } else {
     feedbackText.textContent = `Incorrect! The correct answer was ${jsonData[randomQuestion].answer}`;
   }
+  const countdownBarLoader = document.getElementById('countdown-bar-fill');
+  countdownBarLoader.style.width = '0';
   // Update the current question after a delay
   setTimeout(() => {
     console.log(questionsList.length);
     // Check if there are any questions left in the list
-    if (questionsList.length > 0) {
+    if (questionNumber < 10) {
       // Update the current question
       showQuestion();
     } else {
@@ -86,7 +92,7 @@ function updateQuestion(quizContentQuestion, imgSrc) {
   }
   // Update the question text
   const questionText = document.getElementById('question');
-  questionText.textContent = quizContentQuestion;
+  questionText.textContent = `${questionNumber}: ${quizContentQuestion}`;
 }
 
 /**
@@ -145,7 +151,7 @@ function showFinalScore(correctAnswers) {
     // Update the high score on the page
     bestHighScore.innerHTML = currHighScore;
   }
-  let scorePercent = (correctAnswers / quizContent.length) * 100;
+  let scorePercent = (correctAnswers / 10) * 100;
   let moveamount = -180 + scorePercent * 1.8;
   const rainbowOverlay = document.getElementById('rainbow-overlay');
 
