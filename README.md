@@ -57,16 +57,11 @@ As a returning visitor I want...
 
 ### Wireframes
 
-![index](https://github.com/user-attachments/assets/ea9ce719-cfdd-432f-a1db-ff893d9b8217)
-![about](https://github.com/user-attachments/assets/fa11ee06-2b77-45cc-aafc-a306b9aff23f)
-![contact](https://github.com/user-attachments/assets/8ca2ebe3-eeb0-4f46-b903-98a2675d2763)
-![quiz](https://github.com/user-attachments/assets/f917fdfb-411f-4c1c-a48e-5de3c49852b8)
-
-#### Homepage
-
-- [Desktop](link here to wireframe)
-- [Tablet](link here to wireframe)
-- [Mobile](link here to wireframe)
+![home](https://github.com/user-attachments/assets/3cd395fb-7281-4ba3-92ce-e6e6c51e78ed)
+![quiz]![quiz](https://github.com/user-attachments/assets/03041377-ea70-4283-b65b-77dd496c4f50)
+![about]![about](https://github.com/user-attachments/assets/88666e63-2622-4d01-a83c-fd7362d005f6)
+![learn]![learn](https://github.com/user-attachments/assets/f7291377-2b0c-4866-b2fb-6412c40cc9e8)
+![contact]![contact](https://github.com/user-attachments/assets/f418da93-5a1d-4245-9199-1f0f055a31d9)
 
 # Features
 
