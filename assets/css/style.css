@@ -380,7 +380,7 @@ section {
   margin: 1rem;
   position: relative;
   text-decoration: none;
-  border: none;
+  border: 2px solid var(--colour-blue);
   cursor: pointer;
   padding: 1vh 2vh;
   border-radius: 10px;
@@ -400,12 +400,11 @@ section {
   height: 250px;
   border-radius: 10px;
   background-image: conic-gradient(
-    rgba(241, 1, 1, 0.6),
-    rgb(253, 100, 29, 0.6),
-    rgb(252, 240, 69, 0.6),
-    rgb(2, 128, 12, 0.6),
-    rgb(20, 1, 140, 0.6),
-    rgb(70, 1, 73, 0.6)
+    var(--colour-blue),
+    var(--colour-pink),
+    var(--colour-orange),
+    var(--colour-yellow),
+    var(--colour-green)
   );
   filter: blur(10px);
   transform: translateY(-50%) rotate(0);
