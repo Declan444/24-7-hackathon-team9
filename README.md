@@ -67,23 +67,23 @@ Imagery for the website will consist of images paying tribute to the bravery and
 
 #### Home
 
-![home](https://github.com/user-attachments/assets/3cd395fb-7281-4ba3-92ce-e6e6c51e78ed)
+[home](https://github.com/user-attachments/assets/3cd395fb-7281-4ba3-92ce-e6e6c51e78ed)
 
 #### Quiz
 
-![quiz](https://github.com/user-attachments/assets/03041377-ea70-4283-b65b-77dd496c4f50)
+[quiz](https://github.com/user-attachments/assets/03041377-ea70-4283-b65b-77dd496c4f50)
 
 #### About
 
-![about](https://github.com/user-attachments/assets/88666e63-2622-4d01-a83c-fd7362d005f6)
+[about](https://github.com/user-attachments/assets/88666e63-2622-4d01-a83c-fd7362d005f6)
 
 #### Learn
 
-![learn](https://github.com/user-attachments/assets/f7291377-2b0c-4866-b2fb-6412c40cc9e8)
+[learn](https://github.com/user-attachments/assets/f7291377-2b0c-4866-b2fb-6412c40cc9e8)
 
 #### Contact
 
-![contact](https://github.com/user-attachments/assets/f418da93-5a1d-4245-9199-1f0f055a31d9)
+[contact](https://github.com/user-attachments/assets/f418da93-5a1d-4245-9199-1f0f055a31d9)
 
 # Features
 
