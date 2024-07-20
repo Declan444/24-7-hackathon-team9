@@ -125,6 +125,7 @@ As a returning visitor I want...
 ## Local Testing
 
 - The project was deployed to Github Pages using the following steps:
+
   - Create and/or Log in to GitHub
   - Locate the repository within GitHub
   - Within the repository, click on Settings
@@ -148,6 +149,7 @@ As a returning visitor I want...
   ## Forking the Repository
 
 - Follow these steps to fork the repository
+
   - Locate the repository on GitHub
   - Click `Fork` in the top right corner
   - If necassary, select the owner for the forked code under the `Owner` dropdown menu.
@@ -180,7 +182,7 @@ As a returning visitor I want...
 
 ## Programs
 
-- [ClodConvert](https://cloudconvert.com/) - For editing and optimizing images
+- [CloudConvert](https://cloudconvert.com/) - For editing and optimizing images
 
 # Acknowledgements
 
