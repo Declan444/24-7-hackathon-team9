@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -40,6 +41,33 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* Global Styles */
+
+.bg-blue {
+  background-color: #a5d3fd;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* 3D Carousel Styles */
@@ -88,6 +116,8 @@ h6 {
       calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
     )
     translateZ(550px);
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 .carousel-3d .slider .item img {
@@ -229,14 +259,6 @@ section {
 
 /* contact page */
 
-.form-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 1rem;
-}
-
 .form-wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -254,6 +276,7 @@ section {
     rgb(20, 1, 140, 0.5) 80%,
     rgb(70, 1, 73, 0.5) 100%
   );
+  padding: 5%;
 }
 
 .form-wrapper h2 {
@@ -262,42 +285,121 @@ section {
   text-align: center;
 }
 
+.input-field {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5%;
+  background: rgb(255, 255, 255, 0.6);
+}
+
 .contact-form {
   margin: 1rem;
 }
 
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-form-btn {
+  justify-content: center;
   margin: 1rem;
+  position: relative;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 1vh 2vh;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.contact-form-btn::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: -10px;
+  top: 50%;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  background-image: conic-gradient(
+    rgba(241, 1, 1, 0.6),
+    rgb(253, 100, 29, 0.6),
+    rgb(252, 240, 69, 0.6),
+    rgb(2, 128, 12, 0.6),
+    rgb(20, 1, 140, 0.6),
+    rgb(70, 1, 73, 0.6)
+  );
+  filter: blur(10px);
+  transform: translateY(-50%) rotate(0);
+  transition: transform 0.3s;
+}
+
+.contact-form-btn-text {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-form-btn:hover::before {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* footer */
+
+.footer {
+  color: #020202;
+  font-weight: bold;
+}
+
+.footer i {
+  color: #020202;
+}
+
+.footer a {
+  color: #020202;
+  text-decoration: none;
 }
 
 /* quiz page */
 
-.quiz-container {
-  margin-top: 56px;
+#question {
+  font-size: 1.5rem;
 }
 
 #choices {
-  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 #choices > li {
-  width: 200px;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  border: 2px solid black;
-  border-radius: 10px;
+  border: 5px solid rgba(0, 0, 0, 0.6);
+  padding: 15px 15px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 #choices > li:hover {
-  width: 220px;
-  height: 45px;
-  cursor: pointer;
+  background-color: #fff;
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
 }
 
 #final-score-display {
@@ -307,6 +409,7 @@ section {
 .rainbow {
   width: 200px;
   position: relative;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -323,6 +426,60 @@ section {
   transform-origin: bottom center;
   transform: rotate(-180deg);
   transition: all 2s ease;
+}
+
+.rainbow-text {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-clip: text;
+  color: transparent;
+  animation: rainbowFlash 15s infinite ease-in-out;
+}
+
+@keyframes rainbowFlash {
+  0% {
+    background-position: 0% 0%;
+    color: black;
+  }
+  10% {
+    background-position: 80% 0%;
+    color: transparent;
+  }
+  20% {
+    background-position: 100% 0%;
+    color: transparent;
+  }
+  30% {
+    background-position: 0% 0%;
+    color: black;
+  }
+  100% {
+    background-position: 0% 0%;
+    color: black;
+  }
+}
+
+.countdown-bar {
+  position: relative;
+  height: 5px;
+  width: 100%;
+}
+
+#countdown-bar-fill {
+  width: 100%;
+  height: 5px;
+  background-color: #b827fc;
+  transition: width 2s ease;
 }
 
 /* Hero Styles */
@@ -342,6 +499,9 @@ section {
 .hero p {
   color: #fff;
 }
+
+
+
 
 /* #declan {
   background-size: cover;
@@ -369,4 +529,59 @@ section {
 .contact-teammate {
 height: fit-content;
 margin: 10px;
+}
+
+
+/* Learn page carousel styles */
+
+.carousel-inner {
+  padding: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: #222;
+  border-radius: 25px;
+  width: 25px;
+}
+
+/* Intro section */
+
+.welcome-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.white-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: -1;
+}
+
+.welcome-text {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-text h2 {
+  border-bottom: 1px solid black;
+  text-align: center;
 }

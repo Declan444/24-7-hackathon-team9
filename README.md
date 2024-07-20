@@ -2,6 +2,8 @@
 
 View the live website [here](https://declan444.github.io/24-7-hackathon-team9/).
 
+![Site Image](assets/documentation/img/site-preview.jpg)
+
 # Contents
 
 - [Overview](#Overview)
@@ -75,27 +77,112 @@ As a returning visitor I want...
 
 # Technologies Used
 
+## Languages Used
+
 - HTML
 - CSS
 - JavaScript
-- Jest
+
+## Frameworks, Libraries and Programmes used
+
+- [Bootstrap](https://getbootstrap.com/)
+- [Fontawesome](https://kit.fontawesome)
 
 # Testing
 
+## Bug &amp; Solutions
+
+### Solved Bugs
+
+### Known Issues
+
+## Validation Results
+
+### W3C HTML Checks
+
+### W3C CSS Checks
+
+### JSHint
+
+### Lighthouse Report
+
+### a11y Report
+
+### Responsiveness Testing
+
+### Testing User Stories
+
+#### FIrst Time VIsitor Goals
+
+#### Returning Visitor Goals
+
+#### Frequent Visitor Goals
+
+### Future Development
+
 # Deployment
+
+## Local Testing
+
+- The project was deployed to Github Pages using the following steps:
+
+  - Create and/or Log in to GitHub
+  - Locate the repository within GitHub
+  - Within the repository, click on Settings
+  - Within the settings page locate the sub-menu on the left hand side and click on Pages
+  - Under "Source" select "Branch:main" then /root
+  - Click Save
+  - Wait a few moments for the repository to deploy
+  - At this point the repository will be deployed and ready to view
+
+## Cloning the Repository
+
+- Follow the steps below to clone the repository:
+
+  - Locate the repository
+  - Click the button labelled "Code" to the top right of the screen
+  - Click HTTPS and copy the link provided
+  - In your local environment navigate to the desired directory
+  - Open a terminal and type "git clone `repository-url`"
+  - Press enter to begin the cloning process
+
+  ## Forking the Repository
+
+- Follow these steps to fork the repository
+
+  - Locate the repository on GitHub
+  - Click `Fork` in the top right corner
+  - If necassary, select the owner for the forked code under the `Owner` dropdown menu.
+  - Optionally, edit the `Repository Name` field to rename your forked repository
+  - Optionally, use the `Description` field to input a description of your fork
+  - Select "Copy the DEFAULT branch only"
+    - This is another optional step, many scenarios only require a fork of the default branch. If you do not select this you will copy all branches into your fork
+  - Click `Create Fork`
 
 # Credits
 
 ## Code
 
 - [Josh's CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
-- [Bootstrap](https://getbootstrap.com/)
+- [Google Fonts](https://fonts.google.com)
+- [SweetAlert](https://sweetalert2.github.io/)
+- [JQuery](https://ajax.googleapis.com)
 
 ## Images
+
+- [Unsplash](https://unsplash.com/) - For imagery used across the site
+
+## Videos
+
+- [Pexels](https://videos/pexels.com) - For video used on the home page
 
 ## Content
 
 - [Stonewall](https://www.stonewall.org.uk/list-lgbtq-terms) - For a list of terminology and their explainations
+
+## Programs
+
+- [CloudConvert](https://cloudconvert.com/) - For editing and optimizing images
 
 # Acknowledgements
 
