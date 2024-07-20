@@ -17,7 +17,7 @@ View the live website [here](https://declan444.github.io/24-7-hackathon-team9/).
 
 # Overview
 
----Sitename--- is positioned to be a central hub of information to dispell myths surrounding certain identies under the LGTBQ+ umbrella, build trust, familiarity and confidence between members of those identities and CIS gendered individuals. The focus is on building a bridge, support and understanding.
+AllyIndex is positioned to be a central hub of information to dispell myths surrounding certain identies under the LGTBQ+ umbrella, build trust, familiarity and confidence between members of those identities and CIS gendered individuals. The focus is on building a bridge, support and understanding.
 
 Additionally, a mini quiz will be accessible to help reinforce what has been learnt through the website and gamify the experience to encourage the user to come back and improve their score by developing their understanding of the LGBTQ community.
 
