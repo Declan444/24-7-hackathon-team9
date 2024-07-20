@@ -500,6 +500,38 @@ section {
   color: #fff;
 }
 
+
+
+
+/* #declan {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+#about-background-image {
+  background-image: url(/assets/img/pride-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#row-two {
+  padding: inherit;
+  margin-top: 20px;
+}
+
+#team-name {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.contact-teammate {
+height: fit-content;
+margin: 10px;
+}
+
+
 /* Learn page carousel styles */
 
 .carousel-inner {
