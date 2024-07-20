@@ -51,9 +51,17 @@ As a returning visitor I want...
 
 ### Colour Scheme
 
+We will be designing our site with soft pastel colours closely matching those found on the Pride flag in order to pay homage to the various LGBTQ communities. Where necassary the colours white and black will also be used in order to create optimal contrast between text and backgrounds for accessibility purposes.
+
+![Colour Scheme](assets/documentation/img/color-palette.png)
+
 ### Typography
 
+For typography across the site we will be using a combination of "Lilita One" and "Montserrat". Both fonts are provided by Google Fonts. Lilita One is a bold and impactful font which will be used for things like section headings, links and buttons whereas Montserrat is a beautiful yet simplistic font in it's own right with wonderful readability at smaller font sizes. Therefore Montserrat will be used for the main text across the website pages.
+
 ### Imagery
+
+Imagery for the website will consist of images paying tribute to the bravery and bold personality of members of the various LGBTQ communities as well as some imagery from historical moments and places, for example, Stonewall. Where possible the images will be sourced from Unsplash which provides images that are free to use. Where necassary we will use images from other sites with attribution.
 
 ### Wireframes
 
@@ -88,6 +96,8 @@ As a returning visitor I want...
 ## Bug &amp; Solutions
 
 ### Solved Bugs
+
+- We had an issue with the quiz sometimes repeating questions. The initial implementation used an array that was prepopulated with the ID of each question. An algorithm would generate a random number and get the ID from the array at the index of the random number, then prompt the user with the question associated with that ID. This implemention was deemed to be convoluted and, as mentioned, had a bug causing the same questions to be asked multiple times on occasions. Rather than investigate the issue to find the cause we opted to simply rework the algorithm. This was due to time constraints and the fact that we conceptualsied a much simpler solution. Now, when a question is asked it adds the question ID to a seperate array, which is checked to see if the array already contains that ID, if it does, it simply generates a new number and checks that the associated question ID isn't already in the list. This is still not perfect but is good enough in this scenario.
 
 ### Known Issues
 
