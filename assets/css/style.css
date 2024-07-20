@@ -426,15 +426,35 @@ section {
 .footer {
   color: #020202;
   font-weight: bold;
-}
-
-.footer i {
-  color: #020202;
+  background: var(--colour-blue);
 }
 
 .footer a {
-  color: #020202;
   text-decoration: none;
+}
+
+.footer a i:hover {
+  font-size: xx-large;
+}
+
+#fb-icon {
+  color: var(--colour-pink);
+  font-size: x-large;
+}
+
+#twitter-icon {
+  color: var(--colour-orange);
+  font-size: x-large;
+}
+
+#insta-icon {
+  color: var(--colour-green);
+  font-size: x-large;
+}
+
+#yt-icon {
+  color: var(--colour-yellow);
+  font-size: x-large;
 }
 
 /* quiz page */
