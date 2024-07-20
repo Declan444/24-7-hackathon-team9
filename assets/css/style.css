@@ -466,7 +466,7 @@ section {
   color: #fff;
 }
 
-/* Learn page carousel styles */
+/* Learn page & carousel styles */
 
 .carousel-inner {
   padding: 50px;
@@ -478,6 +478,20 @@ section {
   border-radius: 25px;
   width: 25px;
 }
+
+.learn-section {
+  height: 100%;
+  padding: 0;
+  background: url("../img/pride-flag.webp");
+  background-size: cover;
+}
+
+.accordion,
+.accordion-item {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
 
 /* Intro section */
 
