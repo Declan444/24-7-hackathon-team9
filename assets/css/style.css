@@ -342,16 +342,15 @@ section {
   padding: 0 1 rem;
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  height: 100%;
+  height: auto;
   background: rgb(241, 1, 1, 0.5);
   background: linear-gradient(
     90deg,
-    rgba(241, 1, 1, 0.5) 0%,
-    rgb(253, 100, 29, 0.5) 20%,
-    rgb(252, 240, 69, 0.5) 40%,
-    rgb(2, 128, 12, 0.5) 60%,
-    rgb(20, 1, 140, 0.5) 80%,
-    rgb(70, 1, 73, 0.5) 100%
+    rgb(169, 240, 255) 0%,
+    rgb(255, 195, 195) 25%,
+    rgb(255, 227, 175) 50%,
+    rgb(246, 251, 165) 75%,
+    rgb(170, 240, 154) 100%
   );
   padding: 5%;
 }
@@ -363,10 +362,7 @@ section {
 }
 
 .input-field {
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 5%;
-  background: rgb(255, 255, 255, 0.6);
+  background: rgb(255, 255, 255, 0.8);
 }
 
 .contact-form {
@@ -384,7 +380,7 @@ section {
   margin: 1rem;
   position: relative;
   text-decoration: none;
-  border: none;
+  border: 2px solid var(--colour-blue);
   cursor: pointer;
   padding: 1vh 2vh;
   border-radius: 10px;
@@ -404,12 +400,11 @@ section {
   height: 250px;
   border-radius: 10px;
   background-image: conic-gradient(
-    rgba(241, 1, 1, 0.6),
-    rgb(253, 100, 29, 0.6),
-    rgb(252, 240, 69, 0.6),
-    rgb(2, 128, 12, 0.6),
-    rgb(20, 1, 140, 0.6),
-    rgb(70, 1, 73, 0.6)
+    var(--colour-blue),
+    var(--colour-pink),
+    var(--colour-orange),
+    var(--colour-yellow),
+    var(--colour-green)
   );
   filter: blur(10px);
   transform: translateY(-50%) rotate(0);
@@ -430,15 +425,35 @@ section {
 .footer {
   color: #020202;
   font-weight: bold;
-}
-
-.footer i {
-  color: #020202;
+  background: var(--colour-blue);
 }
 
 .footer a {
-  color: #020202;
   text-decoration: none;
+}
+
+.footer a i:hover {
+  font-size: xx-large;
+}
+
+#fb-icon {
+  color: var(--colour-pink);
+  font-size: x-large;
+}
+
+#twitter-icon {
+  color: var(--colour-orange);
+  font-size: x-large;
+}
+
+#insta-icon {
+  color: var(--colour-green);
+  font-size: x-large;
+}
+
+#yt-icon {
+  color: var(--colour-yellow);
+  font-size: x-large;
 }
 
 /* quiz page */
@@ -576,12 +591,6 @@ section {
   color: #fff;
 }
 
-/* #declan {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
 #about-background-image {
   background-image: url(/assets/img/pride-background.jpg);
   background-size: cover;
@@ -602,6 +611,17 @@ section {
 .contact-teammate {
   height: fit-content;
   margin: 10px;
+  text-align: center;
+}
+
+.contact-teammate a {
+  display: inline-block; /* Ensures the anchor tags are displayed inline */
+  margin: 0 10px; /* Optional: Adds space between icons */
+  color: inherit; /* Inherit the color from parent, which can be controlled via text color */
+}
+
+.contact-teammate i {
+  font-size: 1.5rem; /* Adjust the size of icons if needed */
 }
 
 /* Learn page carousel styles */
