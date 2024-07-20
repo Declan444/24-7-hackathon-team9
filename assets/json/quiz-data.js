@@ -5,8 +5,8 @@ const jsonData = [
     choices: [
       { id: "a", content: "1970" },
       { id: "b", content: "1969" },
-      { "id": "c", content: "1989" },
-      { "id": "d", content: "2001" }
+      { id: "c", content: "1989" },
+      { id: "d", content: "2001" }
     ],
     answer: "b"
   },
