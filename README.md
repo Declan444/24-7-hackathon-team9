@@ -85,6 +85,9 @@ As a returning visitor I want...
 
 ## Frameworks, Libraries and Programmes used
 
+- [Bootstrap](https://getbootstrap.com/)
+- [Fontawesome](https://kit.fontawesome)
+
 # Testing
 
 ## Bug &amp; Solutions
@@ -159,9 +162,7 @@ As a returning visitor I want...
 ## Code
 
 - [Josh's CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
-- [Bootstrap](https://getbootstrap.com/)
 - [Google Fonts](https://fonts.google.com)
-- [Fontawesome](https://kit.fontawesome)
 - [SweetAlert](https://sweetalert2.github.io/)
 - [JQuery](https://ajax.googleapis.com)
 
@@ -179,7 +180,7 @@ As a returning visitor I want...
 
 ## Programs
 
--[ClodConvert](https://cloudconvert.com/) - For editing and optimizing images
+- [ClodConvert](https://cloudconvert.com/) - For editing and optimizing images
 
 # Acknowledgements
 
