@@ -54,7 +54,12 @@ function checkAnswer(selected) {
     correctAnswers++;
     score.innerHTML = correctAnswers;
   } else {
-    feedbackText.textContent = `Incorrect! The correct answer was ${jsonData[randomQuestion].answer}`;
+    const correctAnswer = jsonData[randomQuestion].choices.find(
+      (choice) => choice.id === jsonData[randomQuestion].answer
+    );
+    feedbackText.textContent = `Incorrect! The correct answer was ${jsonData[
+      randomQuestion
+    ].answer.toUpperCase()}: ${correctAnswer.content}`;
   }
   const countdownBarLoader = document.getElementById('countdown-bar-fill');
   countdownBarLoader.style.width = '0';
