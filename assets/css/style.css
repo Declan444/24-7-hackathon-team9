@@ -45,6 +45,34 @@ h6 {
 
 /* Global Styles */
 
+:root {
+  --colour-blue: #a9f0ff;
+  --color-pink: #ffc3c3;
+  --colour-orange: #ffe3af;
+  --colour-yellow: #f6fba5;
+  --colour-green: #aaf09a;
+}
+
+.text-blue {
+  color: var(--colour-blue);
+}
+
+.text-pink {
+  color: var(--color-pink);
+}
+
+.text-orange {
+  color: var(--colour-orange);
+}
+
+.text-green {
+  color: var(--colour-green);
+}
+
+.text-yellow {
+  color: var(--colour-yellow);
+}
+
 .bg-blue {
   background-color: rgba(169, 240, 255, 0.6);
   color: #222;
