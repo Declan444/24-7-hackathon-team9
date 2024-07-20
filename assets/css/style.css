@@ -593,6 +593,17 @@ section {
 .contact-teammate {
   height: fit-content;
   margin: 10px;
+  text-align: center;
+}
+
+.contact-teammate a {
+  display: inline-block; /* Ensures the anchor tags are displayed inline */
+  margin: 0 10px; /* Optional: Adds space between icons */
+  color: inherit; /* Inherit the color from parent, which can be controlled via text color */
+}
+
+.contact-teammate i {
+  font-size: 1.5rem; /* Adjust the size of icons if needed */
 }
 
 /* Learn page carousel styles */
