@@ -123,15 +123,15 @@ Imagery for the website will consist of images paying tribute to the bravery and
 
 While all pages have some messages rated as "info" we have decided to ignore them as they will have little to no impact on usability or accessibility and within the scope of this project we would rather use the time elsewhere. For the sake of this project we are prioritising "warning" and "error" messages.
 
-[https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Findex.html](Report for Index)
+[Index](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Findex.html)
 
-[https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fquiz.html](Report for Quiz)
+[Quiz](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fquiz.html)
 
-[https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fabout.html](Report for About)
+[About](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fabout.html)
 
-[https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Flearn.html](Report for Learn)
+[Learn](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Flearn.html)
 
-[https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fcontact.html](Report for Contact)
+[Contact](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fcontact.html)
 
 We have a single warning for the use of an inline styling including a CSS variable. This is only a minor concern. The inline CSS variable is implemented to avoid unecassary Javascript so this is a compromise we have discussed and are willing to make. Other than this we have no reported warnings or errors.
 
