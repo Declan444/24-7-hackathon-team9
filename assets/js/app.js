@@ -3,13 +3,9 @@ import jsonData from './../json/quiz-data.js';
 // Vars for global scope as the data is passed around between a lot of functions
 var quizContent = jsonData;
 var correctAnswers = 0;
-var questionsList = [];
+var questionsAsked = [];
 var randomQuestion;
 var questionNumber = 0;
-// Create a list of questions to be asked in random order and then remove them from the list as they are asked to avoid duplicates
-while (questionsList.length < quizContent.length) {
-  questionsList.push(quizContent[questionsList.length].id);
-}
 
 /**
  * Function to show the question and answers
@@ -23,11 +19,13 @@ function showQuestion() {
   const feedbackText = document.getElementById('feedback-text');
   feedbackText.textContent = '';
   // Generate random number
-  randomQuestion = Math.floor(Math.random() * questionsList.length);
-  // Remove that value from questionList
-  questionsList = questionsList.filter(
-    (question) => question !== questionsList[randomQuestion]
-  );
+  randomQuestion = Math.floor(Math.random() * jsonData.length);
+  // Check if this value is already in the questionsAsked array and if so get a new one
+  while (questionsAsked.includes(randomQuestion)) {
+    randomQuestion = Math.floor(Math.random() * jsonData.length);
+  }
+  // Add the ID of the current question to the questionsAsked array
+  questionsAsked.push(randomQuestion);
   /**
    * Update the question and answers on the page
    * @param {String} quizContent[randomQuestion].prompt - The question to be asked
@@ -62,8 +60,7 @@ function checkAnswer(selected) {
   countdownBarLoader.style.width = '0';
   // Update the current question after a delay
   setTimeout(() => {
-    console.log(questionsList.length);
-    // Check if there are any questions left in the list
+    // Check if 10 questions have been asked
     if (questionNumber < 10) {
       // Update the current question
       showQuestion();
