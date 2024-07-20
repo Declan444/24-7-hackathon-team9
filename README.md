@@ -113,6 +113,8 @@ Imagery for the website will consist of images paying tribute to the bravery and
 
 - We had an issue with the quiz sometimes repeating questions. The initial implementation used an array that was prepopulated with the ID of each question. An algorithm would generate a random number and get the ID from the array at the index of the random number, then prompt the user with the question associated with that ID. This implemention was deemed to be convoluted and, as mentioned, had a bug causing the same questions to be asked multiple times on occasions. Rather than investigate the issue to find the cause we opted to simply rework the algorithm. This was due to time constraints and the fact that we conceptualsied a much simpler solution. Now, when a question is asked it adds the question ID to a seperate array, which is checked to see if the array already contains that ID, if it does, it simply generates a new number and checks that the associated question ID isn't already in the list. This is still not perfect but is good enough in this scenario.
 
+- Our video background was initially picked up as having errors because it was defined as a section and had no headings within it. In order to resolve this we changed the parent HTML element to be a simple `div` instead of a `section`.
+
 ### Known Issues
 
 ## Validation Results
@@ -125,15 +127,29 @@ While all pages have some messages rated as "info" we have decided to ignore the
 
 [https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fquiz.html](Report for Quiz)
 
-We have a single warning for the use of an inline styling including a CSS variable. This is only a minor concern. The inline CSS variable is implemented to avoid unecassary Javascript so this is a compromise we have discussed and are willing to make.
+[https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fabout.html](Report for About)
+
+[https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Flearn.html](Report for Learn)
+
+[https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fcontact.html](Report for Contact)
+
+We have a single warning for the use of an inline styling including a CSS variable. This is only a minor concern. The inline CSS variable is implemented to avoid unecassary Javascript so this is a compromise we have discussed and are willing to make. Other than this we have no reported warnings or errors.
 
 ### W3C CSS Checks
 
 ### JSHint
 
+In order to verify our JavaScript file does not have any errors we have validated the app.js file using JSHint. The results are visible in the image below. No errors were found.
+
+![JSHint Image](assets/documentation/img/js-hint.png)
+
 ### Lighthouse Report
 
 ### a11y Report
+
+We used a11y to check the site for any contrast issues. The report can be seen in the image below. There were no accessibility issues found.
+
+![a11y Contrast Test Result](assets/documentation/img/contrast-check.png)
 
 ### Responsiveness Testing
 
