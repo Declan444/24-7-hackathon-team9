@@ -573,12 +573,14 @@ section {
   color: #fff;
 }
 
+/*
 #about-background-image {
   background-image: url(/assets/img/pride-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+*/
 
 #row-two {
   padding: inherit;
@@ -622,7 +624,7 @@ section {
 .learn-section {
   height: 100%;
   padding: 0;
-  background: url('../img/pride-flag.webp');
+  background: transparent;
   background-size: cover;
 }
 
@@ -631,8 +633,22 @@ section {
   background: rgba(255, 255, 255, 0.5);
 }
 
-.accordion-button {
-  background-color: var(--colour-blue);
+.accordion-pink,
+.accordion-pink:not(.collapsed) {
+  background-color: var(--colour-pink);
+  color: #020202;
+}
+
+.accordion-yellow,
+.accordion-yellow:not(.collapsed) {
+  background-color: var(--colour-yellow);
+  color: #020202;
+}
+
+.accordion-green,
+.accordion-green:not(.collapsed) {
+  background-color: var(--colour-green);
+  color: #020202;
 }
 
 /* Intro section */
