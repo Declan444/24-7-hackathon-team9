@@ -633,22 +633,39 @@ section {
   background: rgba(255, 255, 255, 0.5);
 }
 
+.accordion-button:not(.collapsed) {
+  background-color: var(--colour-blue);
+  color: black;
+}
+
 .accordion-pink,
 .accordion-pink:not(.collapsed) {
   background-color: var(--colour-pink);
-  color: #020202;
+  color: black;
 }
 
 .accordion-yellow,
 .accordion-yellow:not(.collapsed) {
   background-color: var(--colour-yellow);
-  color: #020202;
+  color: black;
 }
 
 .accordion-green,
 .accordion-green:not(.collapsed) {
   background-color: var(--colour-green);
-  color: #020202;
+  color: black;
+}
+
+.accordion-orange,
+.accordion-orange:not(.collapsed) {
+  background-color: var(--colour-orange);
+  color: black;
+}
+
+.accordion-blue,
+.accordion-blue:not(.collapsed) {
+  background-color: var(--colour-blue);
+  color: black;
 }
 
 /* Intro section */
