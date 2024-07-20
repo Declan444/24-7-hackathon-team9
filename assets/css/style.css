@@ -78,6 +78,10 @@ h6 {
   color: #222;
 }
 
+.background-blue {
+  background-color: var(--colour-blue);
+}
+
 h1,
 h2,
 h3,
@@ -338,16 +342,15 @@ section {
   padding: 0 1 rem;
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  height: 100%;
+  height: auto;
   background: rgb(241, 1, 1, 0.5);
   background: linear-gradient(
     90deg,
-    rgba(241, 1, 1, 0.5) 0%,
-    rgb(253, 100, 29, 0.5) 20%,
-    rgb(252, 240, 69, 0.5) 40%,
-    rgb(2, 128, 12, 0.5) 60%,
-    rgb(20, 1, 140, 0.5) 80%,
-    rgb(70, 1, 73, 0.5) 100%
+    rgb(169, 240, 255) 0%,
+    rgb(255, 195, 195) 25%,
+    rgb(255, 227, 175) 50%,
+    rgb(246, 251, 165) 75%,
+    rgb(170, 240, 154) 100%
   );
   padding: 5%;
 }
@@ -359,10 +362,7 @@ section {
 }
 
 .input-field {
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 5%;
-  background: rgb(255, 255, 255, 0.6);
+  background: rgb(255, 255, 255, 0.8);
 }
 
 .contact-form {
@@ -380,7 +380,7 @@ section {
   margin: 1rem;
   position: relative;
   text-decoration: none;
-  border: none;
+  border: 2px solid var(--colour-blue);
   cursor: pointer;
   padding: 1vh 2vh;
   border-radius: 10px;
@@ -400,12 +400,11 @@ section {
   height: 250px;
   border-radius: 10px;
   background-image: conic-gradient(
-    rgba(241, 1, 1, 0.6),
-    rgb(253, 100, 29, 0.6),
-    rgb(252, 240, 69, 0.6),
-    rgb(2, 128, 12, 0.6),
-    rgb(20, 1, 140, 0.6),
-    rgb(70, 1, 73, 0.6)
+    var(--colour-blue),
+    var(--colour-pink),
+    var(--colour-orange),
+    var(--colour-yellow),
+    var(--colour-green)
   );
   filter: blur(10px);
   transform: translateY(-50%) rotate(0);
@@ -426,15 +425,17 @@ section {
 .footer {
   color: #020202;
   font-weight: bold;
-}
-
-.footer i {
-  color: #020202;
+  background: var(--colour-blue);
 }
 
 .footer a {
-  color: #020202;
   text-decoration: none;
+  color: #020202;
+}
+
+.footer a i:hover {
+  font-size: xx-large;
+  color: var(--colour-yellow);
 }
 
 /* quiz page */
@@ -506,13 +507,12 @@ section {
   font-weight: bold;
   background: linear-gradient(
     90deg,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
+    var(--colour-blue),
+    var(--colour-pink),
+    var(--colour-orange),
+    var(--colour-yellow),
+    var(--colour-green),
+    var(--colour-blue)
   );
   background-clip: text;
   color: transparent;
@@ -573,18 +573,14 @@ section {
   color: #fff;
 }
 
-/* #declan {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
+/*
 #about-background-image {
   background-image: url(/assets/img/pride-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+*/
 
 #row-two {
   padding: inherit;
@@ -599,6 +595,17 @@ section {
 .contact-teammate {
   height: fit-content;
   margin: 10px;
+  text-align: center;
+}
+
+.contact-teammate a {
+  display: inline-block; /* Ensures the anchor tags are displayed inline */
+  margin: 0 10px; /* Optional: Adds space between icons */
+  color: inherit; /* Inherit the color from parent, which can be controlled via text color */
+}
+
+.contact-teammate i {
+  font-size: 1.5rem; /* Adjust the size of icons if needed */
 }
 
 /* Learn page carousel styles */
@@ -617,13 +624,48 @@ section {
 .learn-section {
   height: 100%;
   padding: 0;
-  background: url('../img/pride-flag.webp');
+  background: transparent;
   background-size: cover;
 }
 
 .accordion,
 .accordion-item {
   background: rgba(255, 255, 255, 0.5);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--colour-blue);
+  color: black;
+}
+
+.accordion-pink,
+.accordion-pink:not(.collapsed) {
+  background-color: var(--colour-pink);
+  color: black;
+}
+
+.accordion-yellow,
+.accordion-yellow:not(.collapsed) {
+  background-color: var(--colour-yellow);
+  color: black;
+}
+
+.accordion-green,
+.accordion-green:not(.collapsed) {
+  background-color: var(--colour-green);
+  color: black;
+}
+
+.accordion-orange,
+.accordion-orange:not(.collapsed) {
+  background-color: var(--colour-orange);
+  color: black;
+}
+
+.accordion-blue,
+.accordion-blue:not(.collapsed) {
+  background-color: var(--colour-blue);
+  color: black;
 }
 
 /* Intro section */
