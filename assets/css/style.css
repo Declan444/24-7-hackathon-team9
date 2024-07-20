@@ -525,13 +525,12 @@ section {
   font-weight: bold;
   background: linear-gradient(
     90deg,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
+    var(--colour-blue),
+    var(--colour-pink),
+    var(--colour-orange),
+    var(--colour-yellow),
+    var(--colour-green),
+    var(--colour-blue)
   );
   background-clip: text;
   color: transparent;
