@@ -664,6 +664,52 @@ section {
   text-decoration: none;
 }
 
+@keyframes rainbow-effect {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.profile-img-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.profile-img {
+  border: 5px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.3);
+}
+
+.profile-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  filter: grayscale(0%);
+  animation: rainbow-effect 1s linear forwards;
+}
+
+.profile-img-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.profile-img:hover + .profile-img-wrapper::after {
+  animation: rainbow-effect 1s linear forwards;
+}
+
+.profile-img-wrapper:hover .profile-img {
+  filter: grayscale(0%);
+  animation: none;
+}
+
 /* Learn page carousel styles */
 
 .carousel-inner {
