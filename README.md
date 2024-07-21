@@ -188,6 +188,7 @@ Quiz
 
 About
 
+![lighthouse_testing_about](assets/documentation/img/lighthouse_testing_about.png)
 
 Learn
 
@@ -204,7 +205,12 @@ We used a11y to check the site for any contrast issues. The report can be seen i
 ![a11y Contrast Test Result](assets/documentation/img/contrast-check.png)
 
 ### Responsiveness Testing
+
 The site has been tested on all screen sizes and performs as expected. 
+
+### Manual Testing
+
+Manual testing can be found in the [Testing File](TESTING.md)
 
 # Deployment
 
