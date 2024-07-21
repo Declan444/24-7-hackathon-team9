@@ -597,7 +597,41 @@ section {
   text-align: center;
 }
 
+@keyframes rainbow {
+  0% { color: #ff0000; }
+  15% { color: #ff7f00; }
+  30% { color: #ffff00; }
+  45% { color: #00ff00; }
+  60% { color: #0000ff; }
+  75% { color: #4b0082; }
+  100% { color: #9400d3; }
+}
+
 .contact-teammate a {
+  display: inline-block;
+  margin: 0 10px;
+  color: inherit;
+}
+
+.contact-teammate i {
+  font-size: 1.5rem;
+  transition: color 0.4s ease;
+}
+
+.contact-teammate a i {
+  color: #ffc3c3;
+}
+
+.contact-teammate a:hover i {
+  animation: rainbow 1.5s linear infinite;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+
+/* .contact-teammate a {
   display: inline-block;
   margin: 0 10px;
   color: inherit; 
@@ -618,7 +652,7 @@ section {
 
 .nav-link:hover {
   text-decoration: none;
-}
+} */
 
 /* Learn page carousel styles */
 
