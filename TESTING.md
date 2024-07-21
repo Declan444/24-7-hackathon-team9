@@ -1,7 +1,7 @@
 ## Manual Testing
 
 | Feature | Expected Outcome | Test Performed | Result | Pass/Fail | Tested By |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | **Nav** |
 | Logo Link | Directed to home page | Clicked logo link | Home page displayed | Pass | Kyle |
 | Home Menu button | Directed to home page | Clicked home menu button | Home page displayed | Pass | Kyle |
@@ -33,3 +33,11 @@
 | Human Rights Campaign Link| Directed to Human Rights Campaign Website | Clicked Link | Link opened in new tab | Pass | Ben |
 | Stonewall UK Link| Directed to Stonewall UK Website | Clicked Link | Link opened in new tab | Pass | Ben |
 | Amnesty International Link| Directed to Amnesty International Website | Clicked Link | Link opened in new tab | Pass | Ben |
+| **Contact Page** |
+| Name field on form requires user entry | Form won't submit and user prompted to enter name | Attempted to submit form with name field empty  | Form didn't submit and I was prompted to enter my name | Pass | Chris |
+| Email field on form requires user entry | Form won't submit and user prompted to enter email | Attempted to submit form with email field empty  | Form didn't submit and I was prompted to enter my email | Pass | Chris |
+| Email must be in correct format ie "example@example.com" | Form won't submit and user prompted to enter email in correct format | Attempted to submit form without "@example.com" | Form didn't submit and I was prompted to enter my email in the correct format | Pass | Chris |
+| Phone number field on form can be left blank if user wishes | Form will submit either with or without a phone number entered | Submitted form with and without phone number entered  | Form submitted successfully with and without a phone number entered | Pass | Chris |
+| Message field on form requires user entry | Form won't submit and user prompted to enter a message | Attempted to submit form with message field empty  | Form didn't submit and I was prompted to enter a message | Pass | Chris |
+| Form submit button | On clicking button form will successfully submit if form is completed as required | Clicked submit button to submit completed form  | Form submitted and page was refreshed | Pass | Chris |
+| User feedback on form submission | When a form is submitted user should be informed their form has been submitted successfully | Submitted completed form | Success message is displayed when form submitted | Pass | Chris |
