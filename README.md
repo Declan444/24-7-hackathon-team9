@@ -2,7 +2,9 @@
 
 View the live website [here](https://declan444.github.io/24-7-hackathon-team9/).
 
-![Site Image](assets/documentation/img/site-preview.jpg)
+
+![image](https://github.com/user-attachments/assets/073b1221-62d8-45d6-94cf-87dfaa3775d9)
+
 
 # Contents
 
@@ -202,16 +204,7 @@ We used a11y to check the site for any contrast issues. The report can be seen i
 ![a11y Contrast Test Result](assets/documentation/img/contrast-check.png)
 
 ### Responsiveness Testing
-
-### Testing User Stories
-
-#### FIrst Time VIsitor Goals
-
-#### Returning Visitor Goals
-
-#### Frequent Visitor Goals
-
-### Future Development
+The site has been tested on all screen sizes and performs as expected. 
 
 # Deployment
 
