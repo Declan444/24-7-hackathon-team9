@@ -575,7 +575,6 @@ section {
 
 /* About Us page */
 #about-background-image {
-  background-image: url(/assets/img/pride-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -629,30 +628,6 @@ section {
 .nav-link:hover {
   text-decoration: none;
 }
-
-
-/* .contact-teammate a {
-  display: inline-block;
-  margin: 0 10px;
-  color: inherit; 
-}
-
-.contact-teammate i {
-  font-size: 1.5rem;
-}
-
-.contact-teammate a i {
-  color: #ffc3c3;
-  transition: color 0.4s ease;
-}
-
-.contact-teammate a i:hover {
-  color: #aaf09a;
-}
-
-.nav-link:hover {
-  text-decoration: none;
-} */
 
 /* Learn page carousel styles */
 
