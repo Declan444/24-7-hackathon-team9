@@ -108,7 +108,7 @@ of information.
 
 The quiz page is where the user can take part in the lgbt+ quiz and test their knowledge. Local high scores are 
 saved to the users device, so they can come back and try again. The user is asked 10 questions from a pool of
-20+ questions. so the quiz is different each time you take part.
+20+ questions, so the quiz is different each time you take part.
 
 ## About Page
 
