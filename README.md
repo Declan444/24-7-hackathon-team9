@@ -182,6 +182,7 @@ Homepage
 
 Quiz
 
+![lighthouse_testing_quiz](assets/documentation/img/lighthouse_testing_quiz.png)
 
 About
 
