@@ -51,17 +51,39 @@ As a returning visitor I want...
 
 ### Colour Scheme
 
+We will be designing our site with soft pastel colours closely matching those found on the Pride flag in order to pay homage to the various LGBTQ communities. Where necassary the colours white and black will also be used in order to create optimal contrast between text and backgrounds for accessibility purposes.
+
+![Colour Scheme](assets/documentation/img/color-palette.png)
+
 ### Typography
+
+For typography across the site we will be using a combination of "Lilita One" and "Montserrat". Both fonts are provided by Google Fonts. Lilita One is a bold and impactful font which will be used for things like section headings, links and buttons whereas Montserrat is a beautiful yet simplistic font in it's own right with wonderful readability at smaller font sizes. Therefore Montserrat will be used for the main text across the website pages.
 
 ### Imagery
 
+Imagery for the website will consist of images paying tribute to the bravery and bold personality of members of the various LGBTQ communities as well as some imagery from historical moments and places, for example, Stonewall. Where possible the images will be sourced from Unsplash which provides images that are free to use. Where necassary we will use images from other sites with attribution.
+
 ### Wireframes
 
-![home](https://github.com/user-attachments/assets/3cd395fb-7281-4ba3-92ce-e6e6c51e78ed)
-![quiz]![quiz](https://github.com/user-attachments/assets/03041377-ea70-4283-b65b-77dd496c4f50)
-![about]![about](https://github.com/user-attachments/assets/88666e63-2622-4d01-a83c-fd7362d005f6)
-![learn]![learn](https://github.com/user-attachments/assets/f7291377-2b0c-4866-b2fb-6412c40cc9e8)
-![contact]![contact](https://github.com/user-attachments/assets/f418da93-5a1d-4245-9199-1f0f055a31d9)
+#### Home
+
+[home](https://github.com/user-attachments/assets/3cd395fb-7281-4ba3-92ce-e6e6c51e78ed)
+
+#### Quiz
+
+[quiz](https://github.com/user-attachments/assets/03041377-ea70-4283-b65b-77dd496c4f50)
+
+#### About
+
+[about](https://github.com/user-attachments/assets/88666e63-2622-4d01-a83c-fd7362d005f6)
+
+#### Learn
+
+[learn](https://github.com/user-attachments/assets/f7291377-2b0c-4866-b2fb-6412c40cc9e8)
+
+#### Contact
+
+[contact](https://github.com/user-attachments/assets/f418da93-5a1d-4245-9199-1f0f055a31d9)
 
 # Features
 
@@ -89,19 +111,45 @@ As a returning visitor I want...
 
 ### Solved Bugs
 
+- We had an issue with the quiz sometimes repeating questions. The initial implementation used an array that was prepopulated with the ID of each question. An algorithm would generate a random number and get the ID from the array at the index of the random number, then prompt the user with the question associated with that ID. This implemention was deemed to be convoluted and, as mentioned, had a bug causing the same questions to be asked multiple times on occasions. Rather than investigate the issue to find the cause we opted to simply rework the algorithm. This was due to time constraints and the fact that we conceptualsied a much simpler solution. Now, when a question is asked it adds the question ID to a seperate array, which is checked to see if the array already contains that ID, if it does, it simply generates a new number and checks that the associated question ID isn't already in the list. This is still not perfect but is good enough in this scenario.
+
+- Our video background was initially picked up as having errors because it was defined as a section and had no headings within it. In order to resolve this we changed the parent HTML element to be a simple `div` instead of a `section`.
+
 ### Known Issues
 
 ## Validation Results
 
 ### W3C HTML Checks
 
+While all pages have some messages rated as "info" we have decided to ignore them as they will have little to no impact on usability or accessibility and within the scope of this project we would rather use the time elsewhere. For the sake of this project we are prioritising "warning" and "error" messages.
+
+[Index](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Findex.html)
+
+[Quiz](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fquiz.html)
+
+[About](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fabout.html)
+
+[Learn](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Flearn.html)
+
+[Contact](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Fcontact.html)
+
+We have a single warning for the use of an inline styling including a CSS variable. This is only a minor concern. The inline CSS variable is implemented to avoid unecassary Javascript so this is a compromise we have discussed and are willing to make. Other than this we have no reported warnings or errors.
+
 ### W3C CSS Checks
 
 ### JSHint
 
+In order to verify our JavaScript file does not have any errors we have validated the app.js file using JSHint. The results are visible in the image below. No errors were found.
+
+![JSHint Image](assets/documentation/img/js-hint.png)
+
 ### Lighthouse Report
 
 ### a11y Report
+
+We used a11y to check the site for any contrast issues. The report can be seen in the image below. There were no accessibility issues found.
+
+![a11y Contrast Test Result](assets/documentation/img/contrast-check.png)
 
 ### Responsiveness Testing
 
