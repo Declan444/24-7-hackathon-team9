@@ -148,6 +148,14 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.3) 0 3px 6px;
 }
 
+.nav-link {
+  color: black;
+}
+
+nav .active {
+  text-decoration: underline;
+}
+
 /* 3D Carousel Styles */
 
 .carousel-container {
