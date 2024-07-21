@@ -26,7 +26,7 @@
     <script src="assets/js/app.js" type="module"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+    <nav class="navbar navbar-expand-lg navbar-light background-blue">
       <div class="container">
         <a class="navbar-brand" href="index.html">AllyIndex</a>
         <button
@@ -104,7 +104,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-content">
+        <div class="carousel-content col-lg-3">
           <h1 class="text-center">Welcome to AllyIndex</h1>
           <p class="text-center">
             Empower yourself with knowledge and support. Start your path to
@@ -117,47 +117,16 @@
         </div>
       </section>
       <!-- Video Background -->
-      <section class="video-bg">
-        <video class="welcome-video" autoplay="true" muted="true" loop="true">
+      <div class="video-bg">
+        <video class="welcome-video" autoplay muted loop>
           <source src="assets/vid/loveislove.mp4" type="video/mp4" />
           Background video of LGBT+ stickers (Browser does not support video.)
         </video>
-      </section>
-      <!-- Quiz CTA -->
-      <section class="p-5 quiz-cta">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="bg-blue py-6 px-6 px-xl-0 rounded-4">
-                <div class="row align-items-center">
-                  <div class="col-md-6 p-5">
-                    <div>
-                      <h2 class="h1 mb-3">Learn More!</h2>
-                      <p class="fs-4">
-                        We have a comprehensive guide to the LGBT+ community and
-                        it's history. Click below to discover more!
-                      </p>
-                      <a href="learn.html" class="btn btn-dark">Learn</a>
-                    </div>
-                  </div>
-                  <div class="col md-6 p-5">
-                    <div class="text-center">
-                      <img
-                        src="assets/img/lightbulb.jpg"
-                        alt="Image of someone holding a lightbulb against the sunset"
-                        class="img-fluid"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+
       <!-- Welcome section-->
       <section class="section welcome-section">
-        <div class="container welcome-text">
+        <div class="container welcome-text col-lg-8">
           <div class="row">
             <div class="col-md-6">
               <h2 class="p-2">Celebrating Diversity</h2>
@@ -192,11 +161,46 @@
           </div>
         </div>
       </section>
+      <!-- Quiz CTA -->
+      <section class="p-5 quiz-cta">
+        <div class="container">
+          <div class="row">
+            <div class="col col-lg-8">
+              <div class="bg-blue py-6 px-6 px-xl-0 rounded-4 learn-card">
+                <div class="row align-items-center">
+                  <div class="col-md-6 p-5">
+                    <div>
+                      <h2 class="h1 mb-3">Learn More!</h2>
+                      <p class="fs-4">
+                        We have a comprehensive guide to the LGBT+ community and
+                        it's history. Click below to discover more!
+                      </p>
+                      <a href="learn.html" class="btn btn-dark">Learn</a>
+                    </div>
+                  </div>
+                  <div class="col md-6 p-5">
+                    <div class="text-center">
+                      <img
+                        src="assets/img/lightbulb.jpg"
+                        alt="Image of someone holding a lightbulb against the sunset"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg bg-blue">
+    <footer class="footer mt-auto py-3 dark-bg background-blue">
       <!-- developer and declaration info -->
-      <p class="m-0 text-center">Created by Team LGBTQCI</p>
+      <p class="m-0 text-center">
+        Created by
+        <a class="footer-team-link" href="about.html">Team LGBTQIA+CI</a>
+      </p>
       <p class="m-0 text-center">Code Institute July 2024 Hackathon</p>
       <!-- social links -->
       <p class="m-0 text-center">

@@ -78,6 +78,10 @@ h6 {
   color: #222;
 }
 
+.background-blue {
+  background-color: var(--colour-blue);
+}
+
 h1,
 h2,
 h3,
@@ -93,7 +97,6 @@ button {
 
 p {
   font-family: 'Montserrat', sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -132,7 +135,16 @@ p {
   z-index: -1;
 }
 
+/* Nav Styles */
+nav {
+  box-shadow: rgba(0, 0, 0, 0.3) 0 3px 6px;
+}
+
 /* 3D Carousel Styles */
+
+.carousel-container {
+  position: relative;
+}
 
 .carousel-3d {
   width: 100%;
@@ -229,14 +241,34 @@ p {
 
 .carousel-content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 50;
-  background: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(
+    125deg,
+    rgb(169, 240, 255) 0%,
+    rgb(255, 195, 195) 25%,
+    rgb(255, 227, 175) 50%,
+    rgb(246, 251, 165) 75%,
+    rgb(170, 240, 154) 100%
+  );
   padding: 15px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
+}
+
+ /* White overlay with 40% transparency */
+.carousel-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: inherit;
+  z-index: -1;
 }
 
 /* about us page */
@@ -335,13 +367,13 @@ section {
 .form-wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 1 rem;
+  padding: 0 1rem;
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
   height: auto;
   background: rgb(241, 1, 1, 0.5);
   background: linear-gradient(
-    90deg,
+    125deg,
     rgb(169, 240, 255) 0%,
     rgb(255, 195, 195) 25%,
     rgb(255, 227, 175) 50%,
@@ -422,34 +454,22 @@ section {
   color: #020202;
   font-weight: bold;
   background: var(--colour-blue);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 -3px 6px;
 }
 
 .footer a {
   text-decoration: none;
+  color: #020202;
 }
 
 .footer a i:hover {
   font-size: xx-large;
-}
-
-#fb-icon {
-  color: var(--colour-pink);
-  font-size: x-large;
-}
-
-#twitter-icon {
-  color: var(--colour-orange);
-  font-size: x-large;
-}
-
-#insta-icon {
-  color: var(--colour-green);
-  font-size: x-large;
-}
-
-#yt-icon {
   color: var(--colour-yellow);
-  font-size: x-large;
+}
+
+.footer-team-link:hover {
+  font-size: xx-large;
+  color: var(--colour-yellow);
 }
 
 /* quiz page */
@@ -577,18 +597,19 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow: var(--colour-pink) 0 1px 2px;
 }
 
 .hero .bg-black-transparent {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .hero p {
-  color: #fff;
+  color: black;
 }
 
+/* About Us page */
 #about-background-image {
-  background-image: url(/assets/img/pride-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -610,14 +631,83 @@ section {
   text-align: center;
 }
 
+@keyframes rainbow {
+  0% { color: #ff0000; }
+  15% { color: #ff7f00; }
+  30% { color: #ffff00; }
+  45% { color: #00ff00; }
+  60% { color: #0000ff; }
+  75% { color: #4b0082; }
+  100% { color: #9400d3; }
+}
+
 .contact-teammate a {
-  display: inline-block; /* Ensures the anchor tags are displayed inline */
-  margin: 0 10px; /* Optional: Adds space between icons */
-  color: inherit; /* Inherit the color from parent, which can be controlled via text color */
+  display: inline-block;
+  margin: 0 10px;
+  color: inherit;
 }
 
 .contact-teammate i {
-  font-size: 1.5rem; /* Adjust the size of icons if needed */
+  font-size: 1.5rem;
+  transition: color 0.4s ease;
+}
+
+.contact-teammate a i {
+  color: #ffc3c3;
+}
+
+.contact-teammate a:hover i {
+  animation: rainbow 1.5s linear infinite;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+@keyframes rainbow-effect {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.profile-img-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.profile-img {
+  border: 5px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.3);
+}
+
+.profile-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  filter: grayscale(0%);
+  animation: rainbow-effect 1s linear forwards;
+}
+
+.profile-img-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.profile-img:hover + .profile-img-wrapper::after {
+  animation: rainbow-effect 1s linear forwards;
+}
+
+.profile-img-wrapper:hover .profile-img {
+  filter: grayscale(0%);
+  animation: none;
 }
 
 /* Learn page carousel styles */
@@ -636,7 +726,7 @@ section {
 .learn-section {
   height: 100%;
   padding: 0;
-  background: url('../img/pride-flag.webp');
+  background: transparent;
   background-size: cover;
 }
 
@@ -645,14 +735,54 @@ section {
   background: rgba(255, 255, 255, 0.5);
 }
 
+.accordion-button:not(.collapsed) {
+  background-color: var(--colour-blue);
+  color: black;
+}
+
+.accordion-pink,
+.accordion-pink:not(.collapsed) {
+  background-color: var(--colour-pink);
+  color: black;
+}
+
+.accordion-yellow,
+.accordion-yellow:not(.collapsed) {
+  background-color: var(--colour-yellow);
+  color: black;
+}
+
+.accordion-green,
+.accordion-green:not(.collapsed) {
+  background-color: var(--colour-green);
+  color: black;
+}
+
+.accordion-orange,
+.accordion-orange:not(.collapsed) {
+  background-color: var(--colour-orange);
+  color: black;
+}
+
+.accordion-blue,
+.accordion-blue:not(.collapsed) {
+  background-color: var(--colour-blue);
+  color: black;
+}
+
 /* Intro section */
 
 .welcome-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 0;
 }
 
 .welcome-text h2 {
   border-bottom: 1px solid black;
   text-align: center;
+}
+
+.learn-card {
+  box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
 }
