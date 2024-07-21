@@ -92,6 +92,33 @@ Imagery for the website will consist of images paying tribute to the bravery and
 - A comprehensive source of information on a broad range of identities
 - A replayable quiz
 
+## Home Page
+
+The home page serves as a way to let the user know what the site is for, the ethos and purpose. The user is 
+greeted with an attention grabbing carousel of lgbt+ images and a call to action to take part in the quiz.
+Further down the homepage, the user can see basic information about what the site hopes to achieve.
+
+## Learn Page
+
+From here the user can browse through the available lgbt+ resources. There is a comprehensive terminology list,
+as well as an overview of lgbt+ history. Each section can be viewed by clicking the heading to view a dropdown
+of information.
+
+## Quiz Page
+
+The quiz page is where the user can take part in the lgbt+ quiz and test their knowledge. Local high scores are 
+saved to the users device, so they can come back and try again. The user is asked 10 questions from a pool of
+20+ questions. so the quiz is different each time you take part.
+
+## About Page
+
+The about page shows who the developers were for the hackathon/project team. The user can view the info cards
+and find links to the developers social and Github pages.
+
+## Contact Page
+
+On the contact page the user can submit a simple form to get in contact with the team.
+
 # Technologies Used
 
 ## Languages Used

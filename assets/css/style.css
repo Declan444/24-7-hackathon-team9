@@ -373,7 +373,7 @@ section {
   height: auto;
   background: rgb(241, 1, 1, 0.5);
   background: linear-gradient(
-    90deg,
+    125deg,
     rgb(169, 240, 255) 0%,
     rgb(255, 195, 195) 25%,
     rgb(255, 227, 175) 50%,
