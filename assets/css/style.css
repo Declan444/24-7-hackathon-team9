@@ -727,11 +727,16 @@ section {
 /* Intro section */
 
 .welcome-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 0;
 }
 
 .welcome-text h2 {
   border-bottom: 1px solid black;
   text-align: center;
+}
+
+.learn-card {
+  box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
 }
