@@ -17,7 +17,7 @@ View the live website [here](https://declan444.github.io/24-7-hackathon-team9/).
 
 # Overview
 
-AllyIndex is positioned to be a central hub of information to dispell myths surrounding certain identies under the LGTBQ+ umbrella, build trust, familiarity and confidence between members of those identities and CIS gendered individuals. The focus is on building a bridge, support and understanding.
+AllyIndex is positioned to be a central hub of information to dispel myths surrounding certain identities under the LGTBQ+ umbrella, build trust, familiarity and confidence between members of those identities and CIS gendered individuals. The focus is on building a bridge, support and understanding.
 
 Additionally, a mini quiz will be accessible to help reinforce what has been learnt through the website and gamify the experience to encourage the user to come back and improve their score by developing their understanding of the LGBTQ community.
 
@@ -27,12 +27,12 @@ Additionally, a mini quiz will be accessible to help reinforce what has been lea
 
 ### First Time Visitor Goals
 
-As a first time visitor I want...
+As a first-time visitor I want...
 
 - to immediately understand the basic concept and purpose of the website
 - to be able to intuitive understand the navigational instruments accessible on the website
 - easily discover prominent features of the website
-- to be able to view the device without issue regeardless of my screen size
+- to be able to view the device without issue regardless of my screen size
 - to be able to easily take a quiz to test my knowledge and learn about the LGBT community
 - easily understand how the quiz works
 - track my progress during the quiz and see what question I am on
@@ -51,17 +51,17 @@ As a returning visitor I want...
 
 ### Colour Scheme
 
-We will be designing our site with soft pastel colours closely matching those found on the Pride flag in order to pay homage to the various LGBTQ communities. Where necassary the colours white and black will also be used in order to create optimal contrast between text and backgrounds for accessibility purposes.
+We will be designing our site with soft pastel colours closely matching those found on the Pride flag in order to pay homage to the various LGBTQ communities. Where necessary the colours white and black will also be used in order to create optimal contrast between text and backgrounds for accessibility purposes.
 
 ![Colour Scheme](assets/documentation/img/color-palette.png)
 
 ### Typography
 
-For typography across the site we will be using a combination of "Lilita One" and "Montserrat". Both fonts are provided by Google Fonts. Lilita One is a bold and impactful font which will be used for things like section headings, links and buttons whereas Montserrat is a beautiful yet simplistic font in it's own right with wonderful readability at smaller font sizes. Therefore Montserrat will be used for the main text across the website pages.
+For typography across the site, we will be using a combination of "Lilita One" and "Montserrat". Both fonts are provided by Google Fonts. Lilita One is a bold and impactful font which will be used for things like section headings, links and buttons whereas Montserrat is a beautiful yet simplistic font in its own right with wonderful readability at smaller font sizes. Therefore, Montserrat will be used for the main text across the website pages.
 
 ### Imagery
 
-Imagery for the website will consist of images paying tribute to the bravery and bold personality of members of the various LGBTQ communities as well as some imagery from historical moments and places, for example, Stonewall. Where possible the images will be sourced from Unsplash which provides images that are free to use. Where necassary we will use images from other sites with attribution.
+Imagery for the website will consist of images paying tribute to the bravery and bold personality of members of the various LGBTQ communities as well as some imagery from historical moments and places, for example, Stonewall. Where possible the images will be sourced from Unsplash which provides images that are free to use. Where necessary we will use images from other sites with attribution.
 
 ### Wireframes
 
@@ -111,9 +111,9 @@ Imagery for the website will consist of images paying tribute to the bravery and
 
 ### Solved Bugs
 
-- We had an issue with the quiz sometimes repeating questions. The initial implementation used an array that was prepopulated with the ID of each question. An algorithm would generate a random number and get the ID from the array at the index of the random number, then prompt the user with the question associated with that ID. This implemention was deemed to be convoluted and, as mentioned, had a bug causing the same questions to be asked multiple times on occasions. Rather than investigate the issue to find the cause we opted to simply rework the algorithm. This was due to time constraints and the fact that we conceptualsied a much simpler solution. Now, when a question is asked it adds the question ID to a seperate array, which is checked to see if the array already contains that ID, if it does, it simply generates a new number and checks that the associated question ID isn't already in the list. This is still not perfect but is good enough in this scenario.
+- We had an issue with the quiz sometimes repeating questions. The initial implementation used an array that was prepopulated with the ID of each question. An algorithm would generate a random number and get the ID from the array at the index of the random number, then prompt the user with the question associated with that ID. This implementation was deemed to be convoluted and, as mentioned, had a bug causing the same questions to be asked multiple times on occasions. Rather than investigate the issue to find the cause we opted to simply rework the algorithm. This was due to time constraints and the fact that we conceptualisied a much simpler solution. Now, when a question is asked it adds the question ID to a separate array, which is checked to see if the array already contains that ID, if it does, it simply generates a new number and checks that the associated question ID isn't already in the list. This is still not perfect but is good enough in this scenario.
 
-- Our video background was initially picked up as having errors because it was defined as a section and had no headings within it. In order to resolve this we changed the parent HTML element to be a simple `div` instead of a `section`.
+- Our video background was initially picked up as having errors because it was defined as a section and had no headings within it. In order to resolve this, we changed the parent HTML element to be a simple `div` instead of a `section`.
 
 ### Known Issues
 
@@ -121,7 +121,7 @@ Imagery for the website will consist of images paying tribute to the bravery and
 
 ### W3C HTML Checks
 
-While all pages have some messages rated as "info" we have decided to ignore them as they will have little to no impact on usability or accessibility and within the scope of this project we would rather use the time elsewhere. For the sake of this project we are prioritising "warning" and "error" messages.
+While all pages have some messages rated as "info" we have decided to ignore them as they will have little to no impact on usability or accessibility and within the scope of this project, we would rather use the time elsewhere. For the sake of this project, we are prioritising "warning" and "error" messages.
 
 [Index](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2Findex.html)
 
