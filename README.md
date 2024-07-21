@@ -188,6 +188,7 @@ Quiz
 
 About
 
+![lighthouse_testing_about](assets/documentation/img/lighthouse_testing_about.png)
 
 Learn
 
