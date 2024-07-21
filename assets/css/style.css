@@ -602,14 +602,12 @@ section {
   color: black;
 }
 
-/*
+/* About Us page */
 #about-background-image {
-  background-image: url(/assets/img/pride-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-*/
 
 #row-two {
   padding: inherit;
@@ -627,14 +625,37 @@ section {
   text-align: center;
 }
 
+@keyframes rainbow {
+  0% { color: #ff0000; }
+  15% { color: #ff7f00; }
+  30% { color: #ffff00; }
+  45% { color: #00ff00; }
+  60% { color: #0000ff; }
+  75% { color: #4b0082; }
+  100% { color: #9400d3; }
+}
+
 .contact-teammate a {
-  display: inline-block; /* Ensures the anchor tags are displayed inline */
-  margin: 0 10px; /* Optional: Adds space between icons */
-  color: inherit; /* Inherit the color from parent, which can be controlled via text color */
+  display: inline-block;
+  margin: 0 10px;
+  color: inherit;
 }
 
 .contact-teammate i {
-  font-size: 1.5rem; /* Adjust the size of icons if needed */
+  font-size: 1.5rem;
+  transition: color 0.4s ease;
+}
+
+.contact-teammate a i {
+  color: #ffc3c3;
+}
+
+.contact-teammate a:hover i {
+  animation: rainbow 1.5s linear infinite;
+}
+
+.nav-link:hover {
+  text-decoration: none;
 }
 
 /* Learn page carousel styles */
