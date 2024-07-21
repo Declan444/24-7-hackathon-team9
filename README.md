@@ -137,6 +137,10 @@ We have a single warning for the use of an inline styling including a CSS variab
 
 ### W3C CSS Checks
 
+[CSS](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fdeclan444.github.io%2F24-7-hackathon-team9%2F&usermedium=all&vextwarning=&warning=1)
+
+The website successfully passes the W3C CSS Validation checks.
+
 ### JSHint
 
 In order to verify our JavaScript file does not have any errors we have validated the app.js file using JSHint. The results are visible in the image below. No errors were found.
@@ -144,6 +148,24 @@ In order to verify our JavaScript file does not have any errors we have validate
 ![JSHint Image](assets/documentation/img/js-hint.png)
 
 ### Lighthouse Report
+
+Homepage
+
+![lighthouse_testing_home](assets/documentation/img/lighthouse_testing_home.png)
+
+Quiz
+
+
+About
+
+
+Learn
+
+![lighthouse_testing_learn](assets/documentation/img/lighthouse_testing_learn.png)
+
+Contact
+
+![Lighthouse_testing_contact](assets/documentation/img/lighthouse_testing_contact.png)
 
 ### a11y Report
 
