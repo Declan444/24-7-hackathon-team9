@@ -720,7 +720,7 @@ section {
   animation: none;
 }
 
-/* Learn page carousel styles */
+/* Learn page and carousel styles */
 
 .carousel-inner {
   padding: 50px;
@@ -777,6 +777,10 @@ section {
 .accordion-blue,
 .accordion-blue:not(.collapsed) {
   background-color: var(--colour-blue);
+  color: black;
+}
+
+.accordion-body > a {
   color: black;
 }
 
