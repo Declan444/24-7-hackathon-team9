@@ -178,6 +178,8 @@ In order to verify our JavaScript file does not have any errors we have validate
 
 ### Lighthouse Report
 
+Lighthouse testing has been thoroughly conducted on every page of the website, with each page excelling in all areas. Particularly noteworthy is the perfect accessibility score of 100 on every page!
+
 Homepage
 
 ![lighthouse_testing_home](assets/documentation/img/lighthouse_testing_home.png)
