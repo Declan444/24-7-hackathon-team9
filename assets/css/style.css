@@ -467,6 +467,11 @@ section {
   color: var(--colour-yellow);
 }
 
+.footer-team-link:hover {
+  font-size: xx-large;
+  color: var(--colour-yellow);
+}
+
 /* quiz page */
 
 #question {
