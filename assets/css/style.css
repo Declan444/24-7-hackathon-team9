@@ -135,6 +135,14 @@ p {
   z-index: -1;
 }
 
+.welcome-video {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
 /* Nav Styles */
 nav {
   box-shadow: rgba(0, 0, 0, 0.3) 0 3px 6px;
