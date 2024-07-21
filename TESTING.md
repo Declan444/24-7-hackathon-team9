@@ -22,3 +22,14 @@
 | **Learn Page** |
 | Terms auto-scroll | Terms auto-scroll | Viewed page on multiple devices (pc, iphone, galaxy phone, ipad) | Terms auto-scrolled | Pass | Kyle |
 | Accordion info cards displayed and hidden when clicked | Info displayed | Clicked accordion info buttons | All accordion cards displayed and hidden when clicked | Pass | Kyle |
+| Trevor Project Link| Directed to Trevor Project Website | Clicked Link | Link opened in new tab | Pass | Ben |
+| LGBTQ Community Center Link| Directed to LGBTQ Community Center Website | Clicked Link | Link opened in new tab | Pass | Ben |
+| Brook Link| Directed to Brook Website | Clicked Link | Link opened in new tab | Pass | Ben |
+| Mind Link| Directed to Mind Website | Clicked Link | Link opened in new tab | Pass | Ben |
+| Jed Foundation Link| Directed to Jed Foundation Website | Clicked Link | Link opened in new tab | Pass | Ben |
+| Pride Events Link| Directed to Pride Events Website | Clicked Link | Link opened in new tab | Pass | Ben |
+| IGLTA Link| Directed to IGLTA Website | Clicked Link | Link opened in new tab | Pass | Ben |
+| Outright International Link| Directed to Outright International Website | Clicked Link | Link opened in new tab | Pass | Ben |
+| Human Rights Campaign Link| Directed to Human Rights Campaign Website | Clicked Link | Link opened in new tab | Pass | Ben |
+| Stonewall UK Link| Directed to Stonewall UK Website | Clicked Link | Link opened in new tab | Pass | Ben |
+| Amnesty International Link| Directed to Amnesty International Website | Clicked Link | Link opened in new tab | Pass | Ben |
