@@ -1,3 +1,12 @@
+# 24/7-hackathonteam-team9
+
+View the live website [here](https://declan444.github.io/24-7-hackathon-team9/).
+View the repo [here](https://github.com/Declan444/24-7-hackathon-team9).
+
+
+![image](https://github.com/user-attachments/assets/073b1221-62d8-45d6-94cf-87dfaa3775d9)
+
+
 ## Manual Testing
 
 | Feature | Expected Outcome | Test Performed | Result | Pass/Fail | Tested By |
