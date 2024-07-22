@@ -609,6 +609,7 @@ section {
 
 .hero {
   padding: 0;
+  padding-top: 56px;
   background-image: url('../img/pride-flag.webp');
   background-size: cover;
   background-repeat: no-repeat;
