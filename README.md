@@ -2,9 +2,7 @@
 
 View the live website [here](https://declan444.github.io/24-7-hackathon-team9/).
 
-
 ![image](https://github.com/user-attachments/assets/073b1221-62d8-45d6-94cf-87dfaa3775d9)
-
 
 # Contents
 
@@ -96,7 +94,7 @@ Imagery for the website will consist of images paying tribute to the bravery and
 
 ## Home Page
 
-The home page serves as a way to let the user know what the site is for, the ethos and purpose. The user is 
+The home page serves as a way to let the user know what the site is for, the ethos and purpose. The user is
 greeted with an attention grabbing carousel of lgbt+ images and a call to action to take part in the quiz.
 Further down the homepage, the user can see basic information about what the site hopes to achieve.
 
@@ -108,7 +106,7 @@ of information.
 
 ## Quiz Page
 
-The quiz page is where the user can take part in the lgbt+ quiz and test their knowledge. Local high scores are 
+The quiz page is where the user can take part in the lgbt+ quiz and test their knowledge. Local high scores are
 saved to the users device, so they can come back and try again. The user is asked 10 questions from a pool of
 20+ questions, so the quiz is different each time you take part.
 
@@ -208,11 +206,13 @@ We used a11y to check the site for any contrast issues. The report can be seen i
 
 ### Responsiveness Testing
 
-The site has been tested on all screen sizes and performs as expected. 
+The site has been tested on all screen sizes and performs as expected.
 
 ### Manual Testing
 
 Manual testing can be found in the [Testing File](TESTING.md)
+
+Testing specifically for the Quiz can be foound in the [Quiz testing File](QUIZ-TESTING.md)
 
 # Deployment
 
